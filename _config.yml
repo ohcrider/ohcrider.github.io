@@ -1,0 +1,26 @@
+# Site settings
+title: 蒲公英の生活
+email: fewspider@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  funny and current life.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://fewspider.github.io" # the base hostname & protocol for your site
+twitter_username: fewspider
+github_username:  fewspider
+
+# Build settings
+markdown: kramdown
+
+# Sass settings
+sass:
+    sass_dir: assets/css
+    style: :compressed
+
+# ignore file
+exclude: [bower.json]
+
+# page size
+paginate: 5
+
+#disqus name
+disqus_username: dandelionslife

@@ -1,0 +1,36 @@
+---
+date: 2013-05-18 01:42:15+00:00
+layout: post
+title: Ubuntu apache使用cURL
+category : linux
+tags : [Apache, curl, php, ubuntu]
+---
+1、安装cURL
+<pre class="prettyprint linenums">
+sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
+</pre>
+<!-- more -->
+
+2、编辑配置文件
+<pre class="prettyprint linenums">
+sudo vi /etc/php5/apache2/php.ini
+</pre>
+
+插入
+<pre class="prettyprint linenums">
+extension=curl.so
+</pre>
+
+3、重启apache
+<pre class="prettyprint linenums">
+sudo service apache2 restart
+</pre>
+
+测试是否支持curl
+<pre class="prettyprint linenums">
+&lt;?php
+if(function_exists('curl_init')){
+    echo "成功啦啦啦*★,°*:.☆\(￣▽￣)/$:*.°★*";
+}
+?&gt;
+</pre>

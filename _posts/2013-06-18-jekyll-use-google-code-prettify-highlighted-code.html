@@ -1,0 +1,33 @@
+---
+layout: post
+category : lessons
+title:  "jekyll使用google-code-prettify高亮代码"
+date: 2013-06-18 19:28:33
+tags : [prettify, jekyll]
+---
+jekyll默认的代码高亮过于简单，不大喜欢。
+以前在tumblr折腾过代码高亮，用google-code-prettify实现的，jekyll一样可以。
+
+到[google-code-prettify](https://code.google.com/p/google-code-prettify/)的项目页,把文件下载下来，找到`run_prettify.js`和`sons-of-obsidian.css`(ps：小编比较喜欢这个主题的样式，可以根据自己的喜好选择),拷贝到相应文件夹。<!-- more -->
+
+再在主题模板文件`<head></head>`标签插入刚才的js和css文件，比如我的是这样：
+
+
+<pre class="prettyprint lang-html linenums">
+ &lt;script type="text/javascript" src="{{ ASSET_PATH }}/js/run_prettify.js">&lt;/script&gt;
+ &lt;link href="{{ ASSET_PATH }}/css/sons-of-obsidian.css" rel="stylesheet"&gt;
+</pre>
+
+以后要贴代码的时候，放在`<pre class="prettyprint linenums">`和`</pre>`标签之间。(ps:linenums表示显示代码的行号，如果要从第四行开始，可以写成这样`linenums:4`）
+
+`cd jekyll所在文件夹`，`jekyll build`一下，刷新，就可以看到效果了。
+
+测试代码高亮：
+<pre class="prettyprint linenums">
+class Voila {
+public:
+  // Voila
+  static const string VOILA = "Voila";
+  // will not interfere with embedded tags.
+}
+</pre>

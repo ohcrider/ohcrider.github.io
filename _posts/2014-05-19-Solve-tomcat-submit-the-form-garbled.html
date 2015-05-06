@@ -1,0 +1,44 @@
+---
+layout: post
+category : lessons
+title:  "解决tomcat提交表单乱码"
+date: 2014-05-19 18:46:22 
+tags : [ tomcat , jsp ]
+---
+<p>可喜可贺，折腾jsp折腾得正起劲的时候，天是辣么的蓝，阳光是辣么的明媚，提交表单居然乱码了。
+<!-- more -->
+<p>
+	Tomcat预设的编码是ISO-8859-1，所以没特别说明的，它都帮你用ISO-8859-1处理了。
+</p>
+
+<p>
+	一般全部设置为 <code>utf-8</code>最方便，咱是灰常讨厌gbk的，将弄好的站点架设在别的服务器上，一般就乱码了，原因是像mysql、eclipse新建默认的jsp页面，都是用<code>utf-8</code>，不一致就容易乱码。
+</p>
+
+<p>
+	下午的情况是：页面什么都没乱码，提交表单就乱码了（用post提交表单的。
+</p>
+
+<p>解决办法如下：</p>
+<p>在当前项目的<code>WebRoot\WEB-INF\web.xml</code>的<code>web-app</code>节点下添加下面的代码</p>
+<p>
+
+<pre class="prettyprint linenums">
+&lt;filter/&gt;
+ &lt;filter-name/&gt;Set Character Encoding&lt;/filter-name/&gt;
+ &lt;filter-class/&gt;org.apache.catalina.filters.SetCharacterEncodingFilter
+ &lt;/filter-class/&gt;
+ &lt;init-param/&gt;
+  &lt;param-name/&gt;encoding&lt;/param-name/&gt;
+  &lt;param-value/&gt;UTF-8&lt;/param-value/&gt;
+ &lt;/init-param/&gt;
+&lt;/filter/&gt;
+
+&lt;filter-mapping/&gt;
+ &lt;filter-name/&gt;Set Character Encoding&lt;/filter-name/&gt;
+ &lt;url-pattern/&gt;/*&lt;/url-pattern/&gt;
+&lt;/filter-mapping/&gt;
+</pre>
+</p>
+
+<P>以上方法在tomcat8.0.5通过测试，tomcat7应该也可以行得通，tomcat6就无视吧╮(￣▽￣")╭</P>

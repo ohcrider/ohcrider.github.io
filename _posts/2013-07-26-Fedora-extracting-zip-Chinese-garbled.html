@@ -1,0 +1,43 @@
+---
+layout: post
+category : linux
+title:  "Fedora解压zip中文乱码"
+date: 2013-07-26 04:38:33 -0700
+tags : [fedora , unzip ]
+---
+在windows下压缩文件，到Linux下，出现乱码，很常见。以前在Ubuntu下，用`unzip -O GBK filename.zip` 就可以搞定。
+
+换了Fedora后，暂时没发现乱码的压缩文件。晚上下载一本书的光盘，又碰到了蛋疼的乱码。尝试之前的方法没成功。看了下unzip的help，没-O那个参数了==
+<!-- more -->
+
+刚好找到一个用python解决的办法，分享下。新建一个`.py`后缀的文件，直接复制粘贴代码：
+
+<pre class="prettyprint linenums">
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+import zipfile
+
+print "Processing File " + sys.argv[1]
+
+file=zipfile.ZipFile(sys.argv[1],"r");
+for name in file.namelist():
+    utf8name=name.decode('gbk')
+    print "Extracting " + utf8name
+    pathname = os.path.dirname(utf8name)
+    if not os.path.exists(pathname) and pathname!= "":
+        os.makedirs(pathname)
+    data = file.read(name)
+    if not os.path.exists(utf8name):
+        fo = open(utf8name, "w")
+        fo.write(data)
+        fo.close
+file.close()
+</pre>
+
+执行解压zip文件，可爱的中文就出来了(๑′ᴗ'๑)。
+<pre class="prettyprint linenums">
+python 文件名.py 需要解压的文件名.zip
+</pre>

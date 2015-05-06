@@ -1,0 +1,90 @@
+---
+layout: post
+category : lessons
+title:  "jsp自定义标签的一些问题"
+date: 2014-05-21 22:50:24 
+tags : [ tomcat , jsp ]
+---
+<p>折腾了一晚上jsp自定义标签，略烦躁。一直报错，校对源码也没什么问题，就是死活跑不起来。
+<!-- more -->
+
+<p>自定义标签没什么复杂的，无非就是几步流程走下来：</p>
+
+<p>1、在<code>WEB-INF</code>目录下添加<code>*.tld</code>文件。</p>
+<p>2、写一个类，继承父类<code>javax.servlet.jsp.tagext.SimpleTagSupport</code>，重写
+<code>doTag()</code>方法。</p>
+<p>3、在要使用自定义标签的jsp页面指定<code>uri</code>和<code>prefix</code>，然后就可以调用自己定义好的标签了。</p>
+
+<p>这里主要说的是简单标签，没有属性，没有方法体，给个简单标签的demo，不展开讨论。</p>
+
+<p>之前有学过php的经历，所以觉得jsp也很容易上手。可是晚上就是一直卡在这边，死活还是给咱报错。一堆错误，主要是说类无法编译。</p>
+
+<p>一直怀疑是<code>*.tld</code>文件路径没放对，其实是<code>*.tld</code>文件的配置有点问题，很细微很细微的问题，不是语法上的错误，所以找起来也相对郁闷些。</p>
+
+<p>爬了那么多帖子，终于找到解决办法了。</p>
+
+<p>原因居然是：tag标签下的tag-class子元素没写包名。这样也可以错，呵呵呵呵呵呵，咱的类直接放在src路径下，没必要写包名吧，根本就没包好不好。</p>
+
+<p>但是jsp就是这么奇葩了，不建个包，老老实实写上包名，就会给你一个“HelloWorldTag cannot be resolved to a type”的错误。</p>
+
+<P>这里还要特别注意的一点是不用去改<code>web.xml</code>，只要把<code>*.tld</code>放到<code>WEB-INF</code>目录下就可以了，<code>WEB-INF</code>的子目录也可以，tomcat就会自动帮你配置好。</P>
+
+<P>还有一点就是<code>uri</code>标签里面可以写域名，不用一定写<code>*.tld</code>的相对路径，网上找了很多教程，都是写路径的。<code>uri</code>的作用就是标识这个自定义的标签，跟wpf引入的名称空间原理差不多吧（没听过wpf的直接忽略这个类比==</P>
+
+<P>贴上代码，方便有类似问题困扰的友友参考：</P>
+
+<p>首先是<code>*.tld</code>，可以去tomcat目录下的<code>/webapps/examples/WEB-INF/jsp2/</code>找到<code>jsp2-example-taglib.tld</code>，复制到自己的项目<code>WEB-INF</code>目录下，当然要适当地改一点东西。</p>
+
+<p>
+<pre class="prettyprint linenums">
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0"&gt;
+    &lt;tlib-version&gt;1.0&lt;/tlib-version&gt;
+    &lt;short-name&gt;mytaglib&lt;/short-name&gt;
+    &lt;uri&gt;http://fewspider.com/mytaglib&lt;/uri&gt;
+    &lt;tag&gt;
+        &lt;name&gt;helloWorld&lt;/name&gt;
+        &lt;tag-class&gt;com.fewspider.HelloWorldTag&lt;/tag-class&gt;
+        &lt;body-content&gt;empty&lt;/body-content&gt;
+    &lt;/tag&gt;
+&lt;/taglib&gt;
+</pre>
+</p>
+
+<p>HelloWorldTag.java类文件：</p>
+
+<p>
+<pre class="prettyprint linenums">
+package com.fewspider;
+import java.io.IOException;
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class HelloWorldTag extends SimpleTagSupport {
+	public void doTag() throws JspException,IOException{
+		getJspContext().getOut().write("Hello World");
+	}
+}
+</pre>
+</p>
+
+<p>jsp页面：</p>
+
+<p>
+	<pre class="prettyprint linenums">
+&lt;%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%&gt;
+&lt;%@ taglib uri="http://fewspider.com/mytaglib" prefix="mytag" %&gt;
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+&lt;mytag:helloWorld/&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>

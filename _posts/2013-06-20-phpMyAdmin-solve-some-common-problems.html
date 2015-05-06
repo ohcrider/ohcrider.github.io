@@ -1,0 +1,58 @@
+---
+layout: post
+category : lessons
+title:  "phpMyAdmin一些常见的问题解决"
+date: 2013-06-20 23:00:36 +0800
+tags : [phpMyAdmin]
+---
+一般安装完后，根据mysql用户名和密码登入。
+
+提示：phpMyAdmin 高级功能未全部设置，部分功能不可用。
+在`/phpMyAdmin/examples`找到`create_tables.sql`，将它导入数据库。<!-- more -->
+
+然后在/phpMyAdmin目录找到`config.inc.php`，没有的话，看看有没有`config.sample.inc.php`，重命名为`config.inc.php`。
+
+将
+<pre class="prettyprint linenums lang-mysql">
+// $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
+// $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
+// $cfg['Servers'][$i]['relation'] = 'pma__relation';
+// $cfg['Servers'][$i]['table_info'] = 'pma__table_info';
+// $cfg['Servers'][$i]['table_coords'] = 'pma__table_coords';
+// $cfg['Servers'][$i]['pdf_pages'] = 'pma__pdf_pages';
+// $cfg['Servers'][$i]['column_info'] = 'pma__column_info';
+// $cfg['Servers'][$i]['history'] = 'pma__history';
+// $cfg['Servers'][$i]['table_uiprefs'] = 'pma__table_uiprefs';
+// $cfg['Servers'][$i]['tracking'] = 'pma__tracking';
+// $cfg['Servers'][$i]['designer_coords'] = 'pma__designer_coords';
+// $cfg['Servers'][$i]['userconfig'] = 'pma__userconfig';
+// $cfg['Servers'][$i]['recent'] = 'pma__recent';
+</pre>
+
+前面的注释`//`全部去掉。
+
+就是酱紫：
+<pre class="prettyprint linenums lang-mysql">
+ $cfg['Servers'][$i]['pmadb'] = 'phpmyadmin';
+ $cfg['Servers'][$i]['bookmarktable'] = 'pma__bookmark';
+ $cfg['Servers'][$i]['relation'] = 'pma__relation';
+ $cfg['Servers'][$i]['table_info'] = 'pma__table_info';
+ $cfg['Servers'][$i]['table_coords'] = 'pma__table_coords';
+ $cfg['Servers'][$i]['pdf_pages'] = 'pma__pdf_pages';
+ $cfg['Servers'][$i]['column_info'] = 'pma__column_info';
+ $cfg['Servers'][$i]['history'] = 'pma__history';
+ $cfg['Servers'][$i]['table_uiprefs'] = 'pma__table_uiprefs';
+ $cfg['Servers'][$i]['tracking'] = 'pma__tracking';
+ $cfg['Servers'][$i]['designer_coords'] = 'pma__designer_coords';
+ $cfg['Servers'][$i]['userconfig'] = 'pma__userconfig';
+ $cfg['Servers'][$i]['recent'] = 'pma__recent';
+</pre>
+
+提示：设置短密码，也是在`config.inc.php`配置文件修改。
+
+<pre class="prettyprint linenums lang-mysql">
+$cfg['blowfish_secret'] = 'a8b7c6d';
+</pre>
+`a8b7c6d`随便写。没有类似这一行的，自己添加。
+
+退出phpMyAdmin，重新登陆，那些提示就没有了。

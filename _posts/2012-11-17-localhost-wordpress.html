@@ -1,0 +1,44 @@
+---
+date: 2012-11-17 02:32:52+00:00
+layout: post
+title: 本地搭建wordpress
+category : lessons
+tags : [wordpress,xampp]
+---
+<p>为什么要在本地安装wordpress，最主要的原因是方便blog的调试，比如要修改下主题、测试下插件的效果，完全可以在自己的pc上完成，没必要冒风险。</p>
+<!-- more -->
+
+</p>1、到XAMPP官网下载<a href="http://www.apachefriends.org/zh_cn/xampp.html">http://www.apachefriends.org/zh_cn/xampp.html</a></p>
+
+<p>windows有三种下载方式，喜欢绿色版的，下载压缩包</p>
+<p>
+<a class="fancybox" rel="fancybox" href="http://farm6.staticflickr.com/5347/9437094074_df3c6fb01b_o.jpg" title="">
+	<img src="http://farm6.staticflickr.com/5347/9437094074_c90e28a928_n.jpg" alt="" />
+</a>
+</p>
+
+<p>2、下载安装包的直接运行安装即可，压缩包的解压后，打开xampp_start.exe。</p>
+
+<p>3、运行下xampp-control.exe，</p>
+<p>
+<a class="fancybox" rel="fancybox" href="http://farm8.staticflickr.com/7363/9437094264_06e8a528f9_b.jpg" title="">
+	<img src="http://farm8.staticflickr.com/7363/9437094264_06e8a528f9_n.jpg" alt="" />
+</a>
+</p>
+
+<p>Apache和Mysql前面默认是打叉的，点击那个叉，会弹出对话框，提示安装，选择yes，安装后，前面的叉会变成打钩，接着点击start，运行成功module那边背景色会变成豆沙绿。</p>
+
+<p>4、打开浏览器，访问[localhost](http://localhost/)</p>
+
+<p>5、访问[wordpress](http://cn.wordpress.org/)官网，下载最新版本的wordpress，解压到xampp\htdocs下，htdocs文件夹下有很多文件，相当于你空间的/public_html目录，你要是打算安装在根目录，就把那些文件删掉，wordpress放到这边，也可以在htdocs文件夹下再新建个目录，安装的时候，访问的路径记得别填错就好。</p>
+
+<p>6、访问[http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)，创建一个新的数据库</p>
+
+<p>
+<a class="fancybox" rel="fancybox" href="http://farm8.staticflickr.com/7422/9434317107_6f270e8fa9_b.jpg" title="">
+	<img src="http://farm8.staticflickr.com/7422/9434317107_6f270e8fa9_n.jpg" alt="" />
+</a>
+</p>
+
+<p>7、接下来跟正常的安装wordpress没什么区别，数据库的用户名填root，密码不用填。</p>
+

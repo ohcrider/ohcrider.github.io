@@ -1,0 +1,22 @@
+{
+  "name": "dandelionslife",
+  "version": "0.0.0",
+  "authors": [
+    "fewspider <fewspider@gmail.com>"
+  ],
+  "description": "jekyll themes",
+  "keywords": [
+    "jekyll",
+    "markdown"
+  ],
+  "license": "MIT",
+  "homepage": "http://fewspider.github.io",
+  "dependencies": {
+    "bootstrap-material-design": "~0.3.0",
+    "fancybox": "~2.1.5",
+    "jquery": "~2.1.4",
+    "requirejs-bower": "~2.1.17",
+    "fontawesome": "~4.3.0",
+    "highlightjs": "~8.5.0"
+  }
+}

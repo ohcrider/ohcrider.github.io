@@ -1,0 +1,106 @@
+<div class="pager">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/">
+    {% else %}
+      <a href="/page{{ paginator.previous_page }}">
+    {% endif %}
+    <button type="button" class="btn btn-material-light-blue-600">
+      <i class="fa fa-step-backward"></i>
+    </button>
+  {% else %}
+    <a href="#">
+      <button type="button" class="btn btn-material-light-blue-600" disabled>
+        <i class="fa fa-step-backward"></i>
+      </button>
+  {% endif %}
+    </a>
+
+  {% if paginator.total_pages <= 5 %}
+    {% for count in (1..paginator.total_pages) %}
+      {% if count == 1 %}
+        <a href="/">
+      {% else %}
+        <a href="/page{{ count }}">
+      {% endif %}
+      {% if count == paginator.page %}
+        <button type="button" class="btn btn-material-light-blue-900" disabled>{{ count }}</button>
+      {% else %}
+        <button type="button" class="btn btn-material-light-blue-600">{{ count }}</button>
+      {% endif %}
+      </a>
+    {% endfor %}
+  {% else %}
+    {% assign total_pages_last_2 = paginator.total_pages | minus:2 %}
+    {% assign total_pages_last_3 = paginator.total_pages | minus:3 %}
+    
+    {% if paginator.page <= 3 %}
+      {% for count in (1..4) %}
+        {% if count == 1 %}
+          <a href="/">
+        {% else %}
+          <a href="/page{{ count }}">
+        {% endif %}
+        {% if count == paginator.page %}
+          <button type="button" class="btn btn-material-light-blue-900" disabled>{{ count }}</button>
+        {% else %}
+          <button type="button" class="btn btn-material-light-blue-600">{{ count }}</button>
+        {% endif %}
+        </a>
+      {% endfor %}
+      <button type="button" class="btn btn-material-light-blue-600" disabled>...</button>
+      <a href="/page{{ paginator.total_pages }}">
+        <button type="button" class="btn btn-material-light-blue-600">{{ paginator.total_pages }}</button>
+      </a>
+    {% elsif paginator.page >= total_pages_last_2 %}
+      <a href="/">
+        <button type="button" class="btn btn-material-light-blue-600">1</button>
+      </a>
+      <button type="button" class="btn btn-material-light-blue-600" disabled>...</button>   
+      {% for count in (total_pages_last_3..paginator.total_pages) %}
+        {% if count == 1 %}
+          <a href="/">
+        {% else %}
+          <a href="/page{{ count }}">
+        {% endif %}
+        {% if count == paginator.page %}
+          <button type="button" class="btn btn-material-light-blue-900" disabled>{{ count }}</button>
+        {% else %}
+          <button type="button" class="btn btn-material-light-blue-600">{{ count }}</button>
+        {% endif %}
+        </a>
+      {% endfor %}
+    {% else %}
+      <a href="/">
+        <button type="button" class="btn btn-material-light-blue-600">1</button>
+      </a>
+      <button type="button" class="btn btn-material-light-blue-600" disabled>...</button>
+      <a href="/page{{ paginator.page | minus:1 }}">
+        <button type="button" class="btn btn-material-light-blue-600">{{ paginator.page | minus:1 }}</button>
+      </a>
+      <a href="/page{{ paginator.page }}">
+        <button type="button" class="btn btn-material-light-blue-900">{{ paginator.page }}</button>
+      </a>
+      <a href="/page{{ paginator.page | plus:1 }}">
+        <button type="button" class="btn btn-material-light-blue-600">{{ paginator.page | plus:1 }}</button>
+      </a>
+      <button type="button" class="btn btn-material-light-blue-600" disabled>...</button>
+      <a href="/page{{ paginator.total_pages }}">
+        <button type="button" class="btn btn-material-light-blue-600">{{ paginator.total_pages }}</button>
+      </a>
+    {% endif %}
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}">
+      <button type="button" class="btn btn-material-light-blue-600">
+        <i class="fa fa-step-forward"></i>
+      </button>
+  {% else %}
+    <a href="#">
+      <button type="button" class="btn btn-material-light-blue-600" disabled>
+        <i class="fa fa-step-forward"></i>
+      </button>
+  {% endif %} 
+  </a>
+</div>

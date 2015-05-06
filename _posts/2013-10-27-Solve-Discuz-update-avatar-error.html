@@ -1,0 +1,25 @@
+---
+layout: post
+category : lessons
+title:  "解决Discuz更新头像错误"
+date: 2013-10-27 00:25:37 -0700
+tags : [ Discuz ]
+---
+今天折腾Discuz！ X3.1，更新头像的时候，老是会提示: 调用已上传图片过程中发生错误。
+<!-- more -->
+
+原因是linux系统区分大小写，解决办法如下：
+
+我们需要修改三个文件，分别是 `uc_server/admin.php `、`uc_server/avatar.php`和`uc_server/index.php`，去掉'UC_API'后面的`strtolower`。
+
+这是修改前的代码：
+<pre class="prettyprint linenums">
+define('UC_API', strtolower(($_SERVER['HTTPS'] == 'on' ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'))));
+</pre>
+
+这是修改后的代码：
+<pre class="prettyprint linenums">
+define('UC_API', (($_SERVER['HTTPS'] == 'on' ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'].substr($_SERVER['PHP_SELF'], 0, strrpos($_SERVER['PHP_SELF'], '/'))));
+</pre>
+
+更新下Discuz后台的缓存，刷新下页面，再次上传就可以了。

@@ -1,0 +1,16 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//Import bootstrap-material-design
+@import 
+		"../lib/bootstrap-material-design/dist/css/material-fullpalette.css",
+		"../lib/bootstrap-material-design/dist/css/ripples.css",
+		"../lib/bootstrap-material-design/dist/css/roboto.css";
+
+//Import font-awesome
+@import "../lib/fontawesome/css/font-awesome.css";
+
+//Import default
+@import "index.scss";

@@ -1,0 +1,28 @@
+---
+layout: post
+category : linux
+title:  "fedora开机启动goagent"
+date: 2013-06-19 12:01:36
+tags : [fedora, goagent]
+---
+<p>
+以前每次开机都要手动打开终端，敲命令，麻烦死了。加入开机启动就省心了。</p>
+
+<p>按住alt+f2，在提示框中输入<code>gnome-session-properties</code>，回车。</p><!-- more -->
+
+<p>启动程序首选项 启动程序 添加</p>
+
+<p>在命令那边，输入命令</p>
+
+<pre class="prettyprint linenums lang-python">
+python3 /home/fewspider/公共/local/proxy.py
+</pre>
+
+<p>名称和注释随便写</p>
+<p>
+<a class="fancybox" rel="fancybox" href="http://farm6.staticflickr.com/5444/9437445790_0f9da53ee4_o.png" title="">
+	<img src="http://farm6.staticflickr.com/5444/9437445790_c4ce2fe710_n.jpg" alt="" />
+</a>
+</p>
+
+<p>重启下，就可以直接浏览需要开代理的站点了</p>

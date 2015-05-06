@@ -1,0 +1,68 @@
+---
+layout: post
+category : lessons
+title:  "从wordpress迁移到jekyll"
+date: 2013-06-22 17:32:18 +0800
+tags : [wordpres, jekyll]
+---
+<p>第一次接触博客，是申请一免费空间打算搭建twitter的api，结果发现那个空间连curl都不支持。于是整了个wordpress，安装过程也很简单，基本是傻瓜式操作。</p>
+
+<p>搭建好博客后，自然是要写些文章，感觉最多也就是自娱自乐，没人会看吧。结果过了几天，登陆wordpress后台，意外地发现居然有人评论，不是bot也不是垃圾广告。哈哈哈，有点小满足感，开心了一小段时间。</p>
+<!-- more -->
+
+<p>也写过一些技术类的东西，比如：uc浏览器改服务器，opera改服务器，也很开心当时写的文章被别人装载了。</p>
+
+<p>高中那个时期接触到比较和技术挨得上边的还是智能手机，电脑技术基本是菜鸟中的菜鸟，连保存网页，安装程序都不会，只知道手机上的软件后缀是sis，电脑不知也。</p>
+
+<p>wordpress是博客中比较优秀的系统，主题也蛮多的，丰富的插件扩展，基本上你想得到的，她都有。说到这里，也许你会很好奇，既然她这么好，为什么要离开她。</p>
+
+1、她让我失去了最开始写文章的欲望，过于复杂的编辑器，一点想写东西的欲望都木有。<br>
+2、国外的空间速度不稳定，加载要很长时间;国内的空间需要备案，麻烦死啦。<br>
+3、由于wordpress是用php写的，速度自然没静态页面快。<br>
+4、wordpress比较主流的功能，jekyll大多数也可以实现。<br>
+5、github pages可以托管静态网页，不用自己再去买域名。虽然说狗爹现在支持支付宝，国内没信用卡，支付也很方便，但是gfw墙域名的速度太快了，根本就无法预料什么时候，被墙了。</p>
+
+<p>从原来的wordpress迁移到jekyll还是挺简单的：</p>
+
+<p>评论使用disqus，到wordpress后台插件搜索disqus，找到那个插件，安装，启用，从wordpress导入评论到disqus，然后检查下原来的文章是否评论显示正常。</p>
+
+<p>一切ok的话,先进入下一步。</p>
+
+<p>wordpress后台 工具 导出 文章 下载导出的文件，下载得到的是xml文件。</p>
+
+<p><a class="fancybox" rel="fancybox" href="http://farm8.staticflickr.com/7381/9433323222_8dfa02b216_o.png" title="Sublime Text 中文输入">
+  <img src="http://farm8.staticflickr.com/7381/9433323222_b9dfa46910_n.jpg" alt="" /></a></p>
+
+<p>这里有个小程序 <a target="_blank" href="https://github.com/thomasf/exitwp">exitwp</a>，可以批量把xml转换成markdown。</p>
+
+<p>把wordpress导出的xml文件放在exitwp目录下的wordpress-xml文件夹下，然后在exitwp根目录下，运行<code>python exitwp</code> ，如果提示错误还是什么，先安装那些杂七杂八的依赖，等待结束，在/build/jekyll/fewspider.com/_posts下（ps：<code>fewspider.com</code>为我自己之前的站点名称），你会发现多了很多markdown文件，这就是转换好的之前的文章。</p>
+
+<p>把这些都放到你自己的jekyll站点<code>_posts</code>文件夹下。</p>
+
+<p>到这里，文章的迁移就完成了，结下来把之前文章的评论用disqus同步过来就可以了。</p>
+
+<p>到disqus管理界面，选择<code>upload a URL map</code></p>
+
+<p><a class="fancybox" rel="fancybox" href="http://farm8.staticflickr.com/7325/9430555483_3593b3e2d8_o.png" title="disqus管理界面">
+  <img src="http://farm8.staticflickr.com/7325/9430555483_514a7b93d5_n.jpg" alt="" /></a></p>
+
+<p>选择<code>upload a URL map</code></p>
+
+<p><a class="fancybox" rel="fancybox" href="http://farm6.staticflickr.com/5534/9433329438_4a07215d65_o.png
+" title="disqus管理界面">
+  <img src="http://farm6.staticflickr.com/5534/9433329438_97754c9329_n.jpg" alt="" /></a></p>
+
+<p>先点击<code>you can download a CSV here</code>,提示：You will receive an email when your export is ready for download.</p>
+
+<p>登陆你自己注册disqus的邮箱，下载里面的附件，解压。打开会看到里面都是链接地址，在原来的地址后面添加现在站点文章的链接，用<code>,</code>隔开。</p>
+
+<p>例如，我要将<code>http://fewspider.com/ubuntu-enable-curl/</code>这篇文章的评论给同步到<code>http://fewspider.github.io/linux/ubuntu-enable-curl.html</code>这篇文章，就要这样修改：
+<p><pre class="prettyprint linenums lang-html">
+http://fewspider.com/ubuntu-enable-curl/，http://fewspider.github.io/linux/ubuntu-enable-curl.html
+</pre></p>
+
+<p>修改后，保存，上传到disqus，一般等一下就会看到之前的评论了。不过，这个的成功率不是百分之百，disqus说24小时后会弄好，我等了一天，还是没成功，失败了两篇文章。</p>
+
+<p>大致从wordpress迁移到jekyll就这几个步骤了，需要注意的是一些markdown语法，exitwp转换好的文章，自己要再看下有没有语法错误。<code>category</code>和<code>tags</code>可以为中文。</p>
+
+<p>结束...</p>

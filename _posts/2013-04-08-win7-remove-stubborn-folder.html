@@ -1,0 +1,17 @@
+---
+date: 2013-04-08 23:45:40+00:00
+layout: post
+title: win7删除顽固文件夹
+category : windows
+tags : [win7]
+---
+
+<p>新建个文本文档，输入
+<pre class="prettyprint linenums">
+DEL /F /A /Q \\?\%1 
+RD /S /Q \\?\%1
+</pre>
+</p>
+<!-- more -->
+<p>另存为1.bat
+把之前删不掉的文件夹拖到1.bat图标上，这样就ok了</p>

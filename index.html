@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+        <div class="post-banner">
+          <div class="pull-left">
+            <i class="fa fa-clock-o"></i>
+            <span class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M:%S" }}</span>
+          </div>
+
+          <div class="pull-right">
+            <i class="fa fa-comment-o"></i>
+            <span>
+              <a href="{{ post.url }}#disqus_thread">0</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="post-content-small">
+        {{ post.content | split: '<!-- more -->' | first }}
+          <p class="readmore">
+            <a href="{{ post.url }}#more">
+              <i class="fa fa-leaf"></i>
+              <span>Read More →</span>
+            </a>
+          </p>
+        
+        </div>
+
+      </li>
+      <hr>
+    {% endfor %}
+  </ul>
+
+  <div class="pull-right">
+    {% include pager.html %}
+  </div>
+</div>
+
+<script type="text/javascript" src="{{ "/assets/scripts/index/index.js" | prepend: site.baseurl }}"></script>
