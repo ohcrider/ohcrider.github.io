@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>蒲公英の生活</title>
+    <description>funny and current life.
+</description>
+    <link>http://fewspider.github.io/</link>
+    <atom:link href="http://fewspider.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 07 May 2015 02:51:06 +0800</pubDate>
+    <lastBuildDate>Thu, 07 May 2015 02:51:06 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>解决IE下javascript trim()不可用</title>
+        <description>&lt;p&gt;貌似又找到了讨厌ie的一个理由，javascript的&lt;code&gt;trim()&lt;/code&gt;居然用不了。神马，ie你又在逗我玩么（╯‵□′）╯︵┴─┴&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;最简单的解决办法，就是用正则表达式。&lt;/p&gt;
+&lt;p&gt;
+	&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+   var s=&quot;  pp   &quot;;//这是要处理空格的字符串
+   s.replace(/(^\s*)|(\s*$)/g, &quot;&quot;);
+&lt;/pre&gt;
+   &lt;/p&gt;</description>
+        <pubDate>Mon, 07 Jul 2014 21:47:31 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2014/07/07/solved-under-IE-javascript-trim-is-not-available.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2014/07/07/solved-under-IE-javascript-trim-is-not-available.html</guid>
+        
+        <category>javascript</category>
+        
+        <category>ie</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>解决myeclipse无法打开jsp文件</title>
+        <description>&lt;p&gt;在处理jsp的一些页面，myeclipse工具下编辑的，可以跑起来。可是把myeclipse关掉后，重新打开刚才那个jsp文件，myeclipse就报错了。提示：&lt;code&gt;Failed to create the part&#39;s controls&lt;/code&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;刚开始以为是自己敲的代码有问题，后来发现不是= =。挺倒霉的其实，myeclipse里面写jsp页面，上面有一个预览，类似Dreamweaver里面的设计视图。╮(￣▽￣&quot;)╭当然愿望是美好的，myeclipse里面的那个设计视图烂得不能再烂。问题其实就出现在这边。&lt;/p&gt;
+&lt;p&gt;不是自己的代码有问题，而是myeclipse自己的bug，页面写的代码有点多，设计视图就崩溃了。把它关掉，就没问题了。&lt;/p&gt;
+&lt;p&gt;window -&gt; perferences -&gt; General -&gt; editors -&gt; file associations 找到jsp -&gt; 把 &lt;code&gt;myeclispe jsp editor&lt;/code&gt; 设为 default（默认是：myeclispe visual jsp editor）&lt;/p&gt;
+&lt;p&gt;这样就没问题啦φ(*￣0￣)&gt;&lt;/p&gt;</description>
+        <pubDate>Mon, 07 Jul 2014 21:18:35 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2014/07/07/solve-myeclipse-jsp-file-could-not-be-opened.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2014/07/07/solve-myeclipse-jsp-file-could-not-be-opened.html</guid>
+        
+        <category>myeclipse</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>jsp自定义标签的一些问题</title>
+        <description>&lt;p&gt;折腾了一晚上jsp自定义标签，略烦躁。一直报错，校对源码也没什么问题，就是死活跑不起来。
+&lt;!-- more --&gt;
+
+&lt;p&gt;自定义标签没什么复杂的，无非就是几步流程走下来：&lt;/p&gt;
+
+&lt;p&gt;1、在&lt;code&gt;WEB-INF&lt;/code&gt;目录下添加&lt;code&gt;*.tld&lt;/code&gt;文件。&lt;/p&gt;
+&lt;p&gt;2、写一个类，继承父类&lt;code&gt;javax.servlet.jsp.tagext.SimpleTagSupport&lt;/code&gt;，重写
+&lt;code&gt;doTag()&lt;/code&gt;方法。&lt;/p&gt;
+&lt;p&gt;3、在要使用自定义标签的jsp页面指定&lt;code&gt;uri&lt;/code&gt;和&lt;code&gt;prefix&lt;/code&gt;，然后就可以调用自己定义好的标签了。&lt;/p&gt;
+
+&lt;p&gt;这里主要说的是简单标签，没有属性，没有方法体，给个简单标签的demo，不展开讨论。&lt;/p&gt;
+
+&lt;p&gt;之前有学过php的经历，所以觉得jsp也很容易上手。可是晚上就是一直卡在这边，死活还是给咱报错。一堆错误，主要是说类无法编译。&lt;/p&gt;
+
+&lt;p&gt;一直怀疑是&lt;code&gt;*.tld&lt;/code&gt;文件路径没放对，其实是&lt;code&gt;*.tld&lt;/code&gt;文件的配置有点问题，很细微很细微的问题，不是语法上的错误，所以找起来也相对郁闷些。&lt;/p&gt;
+
+&lt;p&gt;爬了那么多帖子，终于找到解决办法了。&lt;/p&gt;
+
+&lt;p&gt;原因居然是：tag标签下的tag-class子元素没写包名。这样也可以错，呵呵呵呵呵呵，咱的类直接放在src路径下，没必要写包名吧，根本就没包好不好。&lt;/p&gt;
+
+&lt;p&gt;但是jsp就是这么奇葩了，不建个包，老老实实写上包名，就会给你一个“HelloWorldTag cannot be resolved to a type”的错误。&lt;/p&gt;
+
+&lt;P&gt;这里还要特别注意的一点是不用去改&lt;code&gt;web.xml&lt;/code&gt;，只要把&lt;code&gt;*.tld&lt;/code&gt;放到&lt;code&gt;WEB-INF&lt;/code&gt;目录下就可以了，&lt;code&gt;WEB-INF&lt;/code&gt;的子目录也可以，tomcat就会自动帮你配置好。&lt;/P&gt;
+
+&lt;P&gt;还有一点就是&lt;code&gt;uri&lt;/code&gt;标签里面可以写域名，不用一定写&lt;code&gt;*.tld&lt;/code&gt;的相对路径，网上找了很多教程，都是写路径的。&lt;code&gt;uri&lt;/code&gt;的作用就是标识这个自定义的标签，跟wpf引入的名称空间原理差不多吧（没听过wpf的直接忽略这个类比==&lt;/P&gt;
+
+&lt;P&gt;贴上代码，方便有类似问题困扰的友友参考：&lt;/P&gt;
+
+&lt;p&gt;首先是&lt;code&gt;*.tld&lt;/code&gt;，可以去tomcat目录下的&lt;code&gt;/webapps/examples/WEB-INF/jsp2/&lt;/code&gt;找到&lt;code&gt;jsp2-example-taglib.tld&lt;/code&gt;，复制到自己的项目&lt;code&gt;WEB-INF&lt;/code&gt;目录下，当然要适当地改一点东西。&lt;/p&gt;
+
+&lt;p&gt;
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&amp;gt;
+
+&amp;lt;taglib xmlns=&quot;http://java.sun.com/xml/ns/j2ee&quot;
+    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd&quot;
+    version=&quot;2.0&quot;&amp;gt;
+    &amp;lt;tlib-version&amp;gt;1.0&amp;lt;/tlib-version&amp;gt;
+    &amp;lt;short-name&amp;gt;mytaglib&amp;lt;/short-name&amp;gt;
+    &amp;lt;uri&amp;gt;http://fewspider.com/mytaglib&amp;lt;/uri&amp;gt;
+    &amp;lt;tag&amp;gt;
+        &amp;lt;name&amp;gt;helloWorld&amp;lt;/name&amp;gt;
+        &amp;lt;tag-class&amp;gt;com.fewspider.HelloWorldTag&amp;lt;/tag-class&amp;gt;
+        &amp;lt;body-content&amp;gt;empty&amp;lt;/body-content&amp;gt;
+    &amp;lt;/tag&amp;gt;
+&amp;lt;/taglib&amp;gt;
+&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;p&gt;HelloWorldTag.java类文件：&lt;/p&gt;
+
+&lt;p&gt;
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+package com.fewspider;
+import java.io.IOException;
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class HelloWorldTag extends SimpleTagSupport {
+	public void doTag() throws JspException,IOException{
+		getJspContext().getOut().write(&quot;Hello World&quot;);
+	}
+}
+&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;p&gt;jsp页面：&lt;/p&gt;
+
+&lt;p&gt;
+	&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+&amp;lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;UTF-8&quot;%&amp;gt;
+&amp;lt;%@ taglib uri=&quot;http://fewspider.com/mytaglib&quot; prefix=&quot;mytag&quot; %&amp;gt;
+&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+&amp;lt;mytag:helloWorld/&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/pre&gt;
+&lt;/p&gt;</description>
+        <pubDate>Thu, 22 May 2014 06:50:24 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2014/05/22/Some-questions-jsp-custom-tag.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2014/05/22/Some-questions-jsp-custom-tag.html</guid>
+        
+        <category>tomcat</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>解决tomcat提交表单乱码</title>
+        <description>&lt;p&gt;可喜可贺，折腾jsp折腾得正起劲的时候，天是辣么的蓝，阳光是辣么的明媚，提交表单居然乱码了。
+&lt;!-- more --&gt;
+&lt;p&gt;
+	Tomcat预设的编码是ISO-8859-1，所以没特别说明的，它都帮你用ISO-8859-1处理了。
+&lt;/p&gt;
+
+&lt;p&gt;
+	一般全部设置为 &lt;code&gt;utf-8&lt;/code&gt;最方便，咱是灰常讨厌gbk的，将弄好的站点架设在别的服务器上，一般就乱码了，原因是像mysql、eclipse新建默认的jsp页面，都是用&lt;code&gt;utf-8&lt;/code&gt;，不一致就容易乱码。
+&lt;/p&gt;
+
+&lt;p&gt;
+	下午的情况是：页面什么都没乱码，提交表单就乱码了（用post提交表单的。
+&lt;/p&gt;
+
+&lt;p&gt;解决办法如下：&lt;/p&gt;
+&lt;p&gt;在当前项目的&lt;code&gt;WebRoot\WEB-INF\web.xml&lt;/code&gt;的&lt;code&gt;web-app&lt;/code&gt;节点下添加下面的代码&lt;/p&gt;
+&lt;p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+&amp;lt;filter/&amp;gt;
+ &amp;lt;filter-name/&amp;gt;Set Character Encoding&amp;lt;/filter-name/&amp;gt;
+ &amp;lt;filter-class/&amp;gt;org.apache.catalina.filters.SetCharacterEncodingFilter
+ &amp;lt;/filter-class/&amp;gt;
+ &amp;lt;init-param/&amp;gt;
+  &amp;lt;param-name/&amp;gt;encoding&amp;lt;/param-name/&amp;gt;
+  &amp;lt;param-value/&amp;gt;UTF-8&amp;lt;/param-value/&amp;gt;
+ &amp;lt;/init-param/&amp;gt;
+&amp;lt;/filter/&amp;gt;
+
+&amp;lt;filter-mapping/&amp;gt;
+ &amp;lt;filter-name/&amp;gt;Set Character Encoding&amp;lt;/filter-name/&amp;gt;
+ &amp;lt;url-pattern/&amp;gt;/*&amp;lt;/url-pattern/&amp;gt;
+&amp;lt;/filter-mapping/&amp;gt;
+&lt;/pre&gt;
+&lt;/p&gt;
+
+&lt;P&gt;以上方法在tomcat8.0.5通过测试，tomcat7应该也可以行得通，tomcat6就无视吧╮(￣▽￣&quot;)╭&lt;/P&gt;</description>
+        <pubDate>Tue, 20 May 2014 02:46:22 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2014/05/20/Solve-tomcat-submit-the-form-garbled.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2014/05/20/Solve-tomcat-submit-the-form-garbled.html</guid>
+        
+        <category>tomcat</category>
+        
+        <category>jsp</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>解决KDE回收站已到达其最大容量</title>
+        <description>&lt;p&gt;最近下载的文件有点多，事后整理发现很多东西没用，删除居然提示：回收站已到达其最大容量！请手动清理回收站。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;把回收站的东西都删了，还是提示那样。原因是&lt;code&gt;~/.local/share/Trash/metadata&lt;/code&gt;文件中&lt;code&gt;Size&lt;/code&gt;的数值太大，把那个文件删了就没事了（当然最好先备份下！&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Apr 2014 18:22:02 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2014/04/24/Solve-kde-trash-has-reached-its-maximum-capacity.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2014/04/24/Solve-kde-trash-has-reached-its-maximum-capacity.html</guid>
+        
+        <category>KDE</category>
+        
+        <category>Fedora</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>解决Fedora KDE无法进入系统</title>
+        <description>&lt;p&gt;最近更新了Fedora，旧的内核和新的内核都无法登录系统，卡在KDE的登录界面那边。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;根据Fedora以往的尿性，拔电源，重启两次以上，就可以了。不过这样对电脑不好，还有这一次比较特别，以前的方法也失败了。&lt;/p&gt;
+
+&lt;p&gt;就是死活不让你登录，没提示密码错误，或者别的，应该说是整个登录界面所有的按钮都失效了，重启和关机也没响应，回车键也一样，就只有Tab键有响应而已。&lt;/p&gt;
+
+&lt;p&gt;不知道KDE那帮人是肿么想的，发布更新前不会事先调试下么，还有KDE的登录界面真的很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑很丑。。。。&lt;/p&gt;
+
+&lt;p&gt;gnome的登录界面就很高大上，不过登录后就没KDE炫了。哈哈哈哈，这也是咱选择KDE的很大原因。&lt;/p&gt;
+
+&lt;p&gt;本来打算格掉Fedora，安装别的linux系统。临死前，死马当活马医╮(￣▽￣”)╭&lt;/p&gt;
+
+&lt;p&gt;本来的思路是开机后，&lt;code&gt;crtl+alt+F2&lt;/code&gt;进入第二个终端，先更新下，没准已经修复这个bug了（还对fedora抱着一丝希望。再重启下，应该就可以了。&lt;/p&gt;
+
+&lt;p&gt;不可以，就把KDE重装下。&lt;/p&gt;
+
+&lt;p&gt;没想到终端下默认是没连接无线网络的，iwconfig没成功，具体错误说是，无线网卡找不到或者设备正忙，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊，纠结死。&lt;/p&gt;
+
+&lt;p&gt;后来换了另外一个思路，就是先终端下登录，然后再启动图形界面&lt;code&gt;startx&lt;/code&gt;，没想到居然可以了。&lt;/p&gt;
+
+&lt;p&gt;不用重装系统了，好开心好开心。现在学校的作业很多是要在windows下完成的，切换系统很经常，这样就方便多了。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Mar 2014 18:00:22 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2014/03/16/Solve-fedora-kde-login-failed.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2014/03/16/Solve-fedora-kde-login-failed.html</guid>
+        
+        <category>KDE</category>
+        
+        <category>Fedora</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+      <item>
+        <title>现状</title>
+        <description>&lt;p&gt;很少更新blog了，一方面是自己懒，另一方面是在看一些比较复杂的书。没机会到处走走，遇到些有趣的事或许就常常更新了。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;搬到外面来住已经过去一学期了，各方面都慢慢习惯。不大适合群居，大学宿舍的简陋不是很在意，就是人有点多，8个人挤一间小房间，东西都没地方放，最主要的是吵。自己需要一个偏安静的地方，继续自己的编程方面还有外语方面的学习。&lt;/p&gt;
+
+&lt;p&gt;以前觉得很多设备都没有，买了一个kpw2，觉得自己会认真看书一点。没想到效率一般，真正忙起来，主力还是电脑，手机什么的只是分散精力。暂时不打算入手任意一种电子设备，等自己可以妥当地安排时间再说。&lt;/p&gt;
+
+&lt;p&gt;22了吧，特别二==，还是太孩子气（不是那种活泼可爱的那种，是做事不耐心，容易乱发脾气。这点挺讨人厌的，尽管没在朋友面前发泄过，但是有时候伤害到妈妈，很苦恼。这点不是可以避免的，只要有接触，就有摩擦。有时候在想一些特别伤心的事，就会不小心伤害到周围的人或食事物。想着随着成长，慢慢减淡，可以控制自己的情绪。虽然进步不大，不过比以前好多了，因为遇到了很多善良的人，给了我很大的善意和慰藉。&lt;/p&gt;
+
+&lt;p&gt;这学期的课是比上学期多了，比较开心的就是有教java、javascript。这两个，上学期自己花了一些时间在学习，java学得不是很好，javascript还是蛮简单的（相对而言。自学跟有老师教，还是有点区别的，不足的地方自己可以知道，弥补过来。&lt;/p&gt;
+
+&lt;p&gt;今天是开学的第三天，连续下了三天的雨，刚出了会太阳，费了点功夫把客厅、厨房、卫生间，还有自己的房间打扫了一遍。花的时间不比我发呆的时间多==，挺震撼的。&lt;/p&gt;
+
+&lt;p&gt;有点启发，把可以马上做得到的事都做完，不想做的事或者觉得会很费时间的事，一眨眼就做完了。&lt;/p&gt;
+
+&lt;p&gt;不大想给家里造成太大的负担，虽然这样做，家里人也不会怨我什么，不过不开心的是自己，所以很多事都拖后了。在纠结要不要去找兼职，还是待在宿舍专心点。拜托几个大学的好友帮忙找了，有机会就和他们一起去工作，赚点点心钱。&lt;/p&gt;
+
+&lt;p&gt;大概就是这样了，生活就是这样。当然也有很多人不清楚我在忙什么，还有就是疑惑你要学的东西真的很费时间和精力么。会尽量腾出时间来陪朋友、恋人，还请谅解。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 20 Feb 2014 00:02:20 +0800</pubDate>
+        <link>http://fewspider.github.io/mood/2014/02/20/current-situation.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/mood/2014/02/20/current-situation.html</guid>
+        
+        <category>school</category>
+        
+        <category>life</category>
+        
+        
+        <category>mood</category>
+        
+      </item>
+    
+      <item>
+        <title>解决apache中文乱码</title>
+        <description>&lt;p&gt;以前没留意apache中文乱码的问题，文件夹和文件都喜欢用英语的形式，没出什么问题。今天拷贝别人的源码进行学习，目录和文件有些是中文的，就出现了蛋疼的乱码。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;fedora apache的配置文件路径为&lt;code&gt;/etc/httpd/conf/httpd.conf 
+&lt;/code&gt;，很简单，只要在最后面添加一行：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+IndexOptions Charset=UTF-8
+&lt;/pre&gt;
+
+&lt;p&gt;重启下apache：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+apachectl restart
+&lt;/pre&gt;
+
+&lt;p&gt;这样就没问题了。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Dec 2013 03:45:33 +0800</pubDate>
+        <link>http://fewspider.github.io/linux/2013/12/13/Solve-apache-chinese-garbled.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/linux/2013/12/13/Solve-apache-chinese-garbled.html</guid>
+        
+        <category>fedora</category>
+        
+        <category>apache</category>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>解决 selinux SVG警报</title>
+        <description>&lt;p&gt;一直被selinux折磨，知道启用它是比较安全，也就没打算关掉，但是也因此多了很多蛋疼的问题。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;SELinux即Security-Enhanced Linux，查了下维基，很nb的赶脚，引用下：&lt;/p&gt;
+
+&lt;p&gt;“	国家安全局安全增强式Linux是一组给Linux核心的补丁，并提供一些更强、更安全的强制访问控制架构来和核心的主要子系统共同运作。基于机密及完整性原则，它提供一个架构来强制信息的分离，以对付入侵的威胁或任何企图略过安全架构的应用程序。借此限制恶意或设计不良的程序可能造成的破坏。它包含一组安全性原则组态设置档的范本以符合一般的安全性目标。	”
+                                                                                                                                    ——美国国家安全局 安全增强式Linux小组&lt;/p&gt;
+
+&lt;p&gt;每次更新完内核，系统就跳出来一个或N个SVG警报，这次貌似是Bumblebee引起的。它给你的解决办法是：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+您应该将这个情况作为 bug 报告。
+您可以生成本地策略模块允许这个访问。
+请执行以下命令此时允许这个访问：
+# grep bumblebeed /var/log/audit/audit.log | audit2allow -M mypol
+# semodule -i mypol.pp
+&lt;/pre&gt;
+
+&lt;p&gt;就是说以root权限执行下面命令，这样就不会报错了。&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+grep bumblebeed /var/log/audit/audit.log | audit2allow -M mypol
+semodule -i mypol.pp
+&lt;/pre&gt;
+
+&lt;p&gt;可是执行完&lt;code&gt;grep bumblebeed /var/log/audit/audit.log | audit2allow -M mypol&lt;/code&gt;，就提示：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+compilation failed:
+sh: /usr/bin/checkmodule: 没有那个文件或目录
+&lt;/pre&gt;
+
+&lt;p&gt;再接着执行&lt;code&gt;semodule -i mypol.pp&lt;/code&gt;，提示：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+semodule:  Failed on mypol.pp!
+&lt;/pre&gt;
+
+&lt;p&gt;安装&lt;code&gt;selinux-policy-devel.noarch&lt;/code&gt;即可。&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+yum install selinux-policy-devel
+&lt;/pre&gt;
+
+&lt;p&gt;安装完后，再次执行：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+grep bumblebeed /var/log/audit/audit.log | audit2allow -M mypol
+semodule -i mypol.pp
+&lt;/pre&gt;
+
+&lt;p&gt;这次成功了，提示：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+[root@localhost fewspider]# grep bumblebeed /var/log/audit/audit.log | audit2allow -M mypol
+******************** IMPORTANT ***********************
+To make this policy package active, execute:
+
+semodule -i mypol.pp
+
+[root@localhost fewspider]# semodule -i mypol.pp
+[root@localhost fewspider]# 
+&lt;/pre&gt;
+
+&lt;p&gt;这样就搞定了，以后由其他软件引起的SVG警报，也可以这样解决。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Dec 2013 13:20:22 +0800</pubDate>
+        <link>http://fewspider.github.io/linux/2013/12/12/Solve-selinux-SVG-alert.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/linux/2013/12/12/Solve-selinux-SVG-alert.html</guid>
+        
+        <category>fedora</category>
+        
+        <category>selinux</category>
+        
+        
+        <category>linux</category>
+        
+      </item>
+    
+      <item>
+        <title>解决/etc/resolv.conf重启失效</title>
+        <description>&lt;p&gt;之前被&lt;code&gt;/etc/resolv.conf&lt;/code&gt;这个文件坑过，导致firefox无法正常联网，wordpress主题和插件无法正常搜索。今天&lt;code&gt;yum update&lt;/code&gt;，报错提示无法连接到xx主机，可是ping得通，也是它搞的鬼，害咱几乎把所有的源都删了，还好有备份。
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;以前也遇到&lt;code&gt;yum update&lt;/code&gt;出错的状况，说下今天遇到的倒霉事，以至于我第一反应不会想到是它。&lt;/p&gt;
+
+&lt;p&gt;上完早课，回到宿舍，打开电脑，居然卡死在ked登录界面，死活进不去fedora。按照往常的经验，重启下就没问题，有时比较贱，需要重启几次才可以。今天就悲剧了，alt+f2查看了下错误，有一个是说无法自动挂载windows下的一个分区，于是进配置文件&lt;code&gt;/etc/fstab&lt;/code&gt;，删掉了那行自动挂载的东西。&lt;/p&gt;
+
+&lt;p&gt;又重启了几次，进得去系统了，就是无法联网，&lt;code&gt;iwconfig&lt;/code&gt;看了下，居然没找到网卡。于是只好用手机下载驱动，然后拷贝到电脑安装，蛋疼死了，幸好文件不是很大，要不那破手机还真塞不下。安装好驱动，就重启了，一切正常。&lt;/p&gt;
+
+&lt;p&gt;查看&lt;code&gt;/etc/resolv.conf&lt;/code&gt;，发现：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+# Generated by NetworkManager
+nameserver 218.85.157.99
+nameserver 218.85.152.99
+&lt;/pre&gt;
+
+&lt;p&gt;这个咱以前说过，改成这样就没问题：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+# Generated by NetworkManager
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+&lt;/pre&gt;
+
+&lt;p&gt;可是重启就打回原型了，这时候我们可以在&lt;code&gt;/etc/sysconfig/network-scripts/&lt;/code&gt;目录下找相关的配置文件，让它不自动修改nameserver。&lt;/p&gt;
+
+&lt;p&gt;咱是用无线上网的，ssid是&lt;code&gt;fewspider&lt;/code&gt;，找到该目录下相似的配置文件，例如在咱本机上的是&lt;code&gt;ifcfg-fewspider&lt;/code&gt;，修改其&lt;code&gt;PEERDNS&lt;/code&gt;的属性即可。&lt;/p&gt;
+
+&lt;p&gt;修改前：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+PEERDNS=yes
+&lt;/pre&gt;
+
+&lt;p&gt;修改后：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+PEERDNS=no
+&lt;/pre&gt;
+
+&lt;p&gt;重启，原来的&lt;code&gt;/etc/resolv.conf&lt;/code&gt;里面的&lt;code&gt;nameserver&lt;/code&gt;可能都没了，把它改回原来的配置即可。&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint linenums&quot;&gt;
+# Generated by NetworkManager
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+&lt;/pre&gt;
+
+&lt;p&gt;再重启试下，这时候就没问题了。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Dec 2013 07:34:22 +0800</pubDate>
+        <link>http://fewspider.github.io/lessons/2013/12/11/Solve-%E2%81%84etc%E2%81%84resolv.conf-restart-failure.html</link>
+        <guid isPermaLink="true">http://fewspider.github.io/lessons/2013/12/11/Solve-%E2%81%84etc%E2%81%84resolv.conf-restart-failure.html</guid>
+        
+        <category>fedora</category>
+        
+        <category>dns</category>
+        
+        
+        <category>lessons</category>
+        
+      </item>
+    
+  </channel>
+</rss>
