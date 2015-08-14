@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% include disqus_comment_count.html %}
 <div class="home">
 
   <ul class="post-list">
@@ -21,7 +21,7 @@ layout: default
           <div class="pull-right">
             <i class="fa fa-comment-o"></i>
             <span>
-              <a href="{{ post.url }}#disqus_thread"  data-disqus-identifier="article_{{ forloop.index }}_identifier">0</a>
+              <a href="{{ post.url }}#disqus_thread">0</a>
             </span>
           </div>
         </div>
@@ -46,5 +46,4 @@ layout: default
     {% include pager.html %}
   </div>
 </div>
-
 <script type="text/javascript" src="{{ "/assets/scripts/index/index.js" | prepend: site.baseurl }}"></script>
