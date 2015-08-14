@@ -21,7 +21,7 @@ layout: default
           <div class="pull-right">
             <i class="fa fa-comment-o"></i>
             <span>
-              <a href="{{ post.url }}#disqus_thread">0</a>
+              <a href="{{ post.url }}#disqus_thread"  data-disqus-identifier="article_{{ forloop.index }}_identifier">0</a>
             </span>
           </div>
         </div>
@@ -47,5 +47,4 @@ layout: default
   </div>
 </div>
 
-<script async type="text/javascript" src="http://{{ site.disqus_username }}.disqus.com/count.js"></script>
 <script type="text/javascript" src="{{ "/assets/scripts/index/index.js" | prepend: site.baseurl }}"></script>
