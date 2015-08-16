@@ -140,7 +140,7 @@ vultr东京🐔🏠的速度还不错。
     try-mtu-discovery = true
     cisco-client-compat = true
 
-####修改route，咱这边是保持默认配置，没去动它，按自己的需求修改。可以参考 kevinzhow 童鞋的[配置](https://gist.github.com/kevinzhow/9661732)。
+####修改route，咱这边是都注释掉，可以按自己的需求修改。可以参考 kevinzhow 童鞋的[配置](https://gist.github.com/kevinzhow/9661732)。
 
 ####修改no route，咱这边也是保持默认配置，这个添加完，貌似就不走代理吧，不过客户端那边也可以配置，就没去动它，按需修改
 
