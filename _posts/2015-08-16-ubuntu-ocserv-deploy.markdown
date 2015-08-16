@@ -1,7 +1,7 @@
 ---
 date: 2015-08-16 10:36:34+00:00
 layout: post
-title: Ubuntu ocser搭建
+title: Ubuntu ocserv搭建
 ---
 
 最近换手机📱(iphone6)啦，以前是Android(LG L22 4.4.0)党。
