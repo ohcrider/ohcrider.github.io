@@ -168,7 +168,7 @@ iOS客户端配置
 ------------
 
 ####安装Cisco AnyConnect
-App Stroe地址[https://itunes.apple.com/us/app/cisco-anyconnect/id392790924](https://itunes.apple.com/us/app/cisco-anyconnect/id392790924)
+App Stroe地址[https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924](https://itunes.apple.com/cn/app/cisco-anyconnect/id392790924)
 
 ####导入证书
 诊断 > 证书 > 导入用户证书，会提示你输入URL，记得加`http://`，假设你的VPS的ip 是 `111.111.111.111` ,拷贝到nginx目录的是user.p12，就应该输入 `http://111.111.111.111/user.p12` 
