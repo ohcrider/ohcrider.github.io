@@ -24,3 +24,5 @@ paginate: 5
 
 #disqus name
 disqus_username: fewspider
+
+gems: [jekyll-paginate]

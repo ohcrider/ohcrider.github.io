@@ -216,6 +216,32 @@
     font-size: 24px;
 }
 
+/**
+ * Table
+ */
+table {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    margin: 0px 0px 14px 0px;
+
+    tr {
+        td, th {
+            padding: 8px;
+            border-left: 1px solid #dddddd;
+            border-top: 1px solid #dddddd;
+            line-height: 20px;
+            vertical-align: top;
+        }
+        td:first-of-type {
+            white-space: nowrap;
+            font-weight: bold;
+            width: 120px;
+            // width: 100%;
+            // min-width: 120px;
+        }
+    }
+}
 
 
 /**
