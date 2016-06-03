@@ -183,7 +183,7 @@ iOS开发 | Swift方面，Objective-C不熟
 
 项目名称 | OAuthSwift 
 项目地址 | [https://github.com/OAuthSwift/OAuthSwift](https://github.com/OAuthSwift/OAuthSwift)
-项目介绍 | Siwft写的Oauth库
+项目介绍 | Swift写的Oauth库
 个人贡献 | 1、Oauth 1.0a 的空白符没有encode，在折腾twitter的api中发现的 <br/> 2、Swift NSURLConnection的方法在iOS 9.0中废弃，改写成推荐的 NSURLSession
 
 项目名称 | twit 
