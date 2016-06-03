@@ -9,7 +9,7 @@ permalink: /resume/
 姓名 | 沈彦
 性别 | 男
 出生日期 | 1993-10-3
-学历 | 大专(2012.9-2015.7毕业 福州闽江学院 web程序应用专业)
+学历 | 2012.9-2015.7毕业 福州闽江学院 web程序应用专业
 英语水平 | 四级
 工作年限 | 2年
 
@@ -158,7 +158,7 @@ iOS开发 | Swift方面，Objective-C不熟
 项目名称 | Tpl 
 项目地址 | [https://github.com/fewspider/Tpl](https://github.com/fewspider/Tpl)
 用途 | 方便自己的开发
-折腾的原因 | 之前负责的一个项目，有用到一个模板渲染的库，没次都要跑到终端去执行命令，生成渲染好的js文件，麻烦
+折腾的原因 | 之前负责的一个项目，有用到一个模板渲染的库，每次都要跑到终端去执行命令，生成渲染好的js文件，麻烦
 链接 | [https://packagecontrol.io/packages/Tpl](https://packagecontrol.io/packages/Tpl)
 
 项目名称 | FFSideMenu 
@@ -196,7 +196,7 @@ iOS开发 | Swift方面，Objective-C不熟
 项目介绍 | Swift著名的网络请求库
 个人贡献 | 修复 README.md 的示例代码里面错误的符号
 
-项目名称 | Alamofire 
+项目名称 | textures 
 项目地址 | [https://github.com/riccardoscalco/textures](https://github.com/riccardoscalco/textures)
 项目介绍 | 一个创建SVG图案的JavaScript库
 个人贡献 | 修复 require 失败
