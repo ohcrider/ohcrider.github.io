@@ -15,6 +15,7 @@ permalink: /resume/
 
 ### 联系方式
 
+电话 | 15260060705
 微信 | fewspider
 邮箱 | [fewspider@gmail.com](mailto:fewspider@gmail.com)
 twitter | [https://twitter.com/fewspider](https://twitter.com/fewspider)
