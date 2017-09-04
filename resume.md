@@ -160,7 +160,7 @@ iOS开发 | Swift方面，Objective-C不熟
 ##### 第三家公司
 
 时间 | 2016/7-现在
-项目名称 | Erp App
+项目名称 | Facebook页游相关
 开发工具 | Atom
 系统 | OS X
 框架 | ES6、VueJS、Webpack
