@@ -199,11 +199,11 @@ permalink: /resume/
 折腾的原因 | 想研究下CocoaPods的库怎么开发
 链接 | [https://cocoapods.org/pods/SwiftChromeActivity](https://cocoapods.org/pods/SwiftChromeActivity)
 
-项目名称 | SwiftChromeActivity
+项目名称 | JsSafeJson
 项目地址 | [https://github.com/ohcrider/JsSafeJson](https://github.com/ohcrider/JsSafeJson)
 用途 | 处理api接口返回数据格式化 避免一些错误类型
 折腾的原因 | 后端数据出错，会得到默认类型的默认值，保证程序健壮
-链接 | [https://github.com/ohcrider/JsSafeJson](https://github.com/ohcrider/JsSafeJson)
+链接 | [https://www.npmjs.com/package/js-safe-json](https://www.npmjs.com/package/js-safe-json)
 
 ##### 其他开源项目代码贡献
 
