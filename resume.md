@@ -186,10 +186,16 @@ permalink: /resume/
 链接 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 
 项目名称 | SwiftChromeActivity
-项目地址 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
+项目地址 | [https://github.com/ohcrider/SwiftChromeActivity](https://github.com/ohcrider/SwiftChromeActivity)
 用途 | 打开链接，可以以Chrome打开，demo见项目地址
 折腾的原因 | 想研究下CocoaPods的库怎么开发
 链接 | [https://cocoapods.org/pods/SwiftChromeActivity](https://cocoapods.org/pods/SwiftChromeActivity)
+
+项目名称 | SwiftChromeActivity
+项目地址 | [https://github.com/ohcrider/JsSafeJson](https://github.com/ohcrider/JsSafeJson)
+用途 | 处理api接口返回数据格式化 避免一些错误类型
+折腾的原因 | 后端数据出错，会得到默认类型的默认值，保证程序健壮
+链接 | [https://github.com/ohcrider/JsSafeJson](https://github.com/ohcrider/JsSafeJson)
 
 ##### 其他开源项目代码贡献
 
