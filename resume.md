@@ -11,26 +11,19 @@ permalink: /resume/
 出生日期 | 1993-10-3
 学历 | 2012.9-2015.7毕业 福州闽江学院 web程序应用专业
 英语水平 | 四级
-工作年限 | 2年
+工作年限 | 6年
 
 ### 联系方式
 
 电话 | [15260060705](tel:15260060705)
 微信 | fewspider
 邮箱 | [fewspider@gmail.com](mailto:fewspider@gmail.com)
-twitter | [https://twitter.com/fewspider](https://twitter.com/fewspider)
 
 ### 求职意向
 
 职位 | 技术栈
 ----|------
-前端开发 | 纯前端项目，AngularJS、VueJS比较熟悉，其他框架可以学习
-Python开发 | Flask方面、爬虫方面、后端
-iOS开发 | Swift方面，Objective-C不熟
-
-### 工作地点
-
-厦门、深圳、杭州、上海（优先级按先后顺序）
+前端开发 | 纯前端项目，REACT+REDUX
 
 ### 工作经历
 
@@ -50,7 +43,7 @@ iOS开发 | Swift方面，Objective-C不熟
 
 ##### 第三段工作经历
 
-时间 | 2016.7-现在
+时间 | 2016.7-2020-7
 公司名称 | 厦门华游科技有限公司
 职位 | Web前端
 工作内容 | 前端（海外页游方面的业务）
@@ -159,40 +152,40 @@ iOS开发 | Swift方面，Objective-C不熟
 
 ##### 第三家公司
 
-时间 | 2016/7-现在
+时间 | 2016/7-2020/7
 项目名称 | Facebook页游相关
 开发工具 | Atom
 系统 | OS X
-框架 | ES6、VueJS、Webpack
+框架 | ES6、VueJS、Webpack、React、Redux
 项目描述 | 主要负责页游的主站，和一些内部系统的维护
 责任描述 | 前端架构
 
 ### 开源方面
 
-##### github地址 [https://github.com/fewspider](https://github.com/fewspider)
+##### github地址 [https://github.com/ohcrider](https://github.com/ohcrider)
 
 ##### 自己的项目介绍
 
 项目名称 | Tpl
-项目地址 | [https://github.com/fewspider/Tpl](https://github.com/fewspider/Tpl)
+项目地址 | [https://github.com/ohcrider/Tpl](https://github.com/ohcrider/Tpl)
 用途 | 方便自己的开发
 折腾的原因 | 之前负责的一个项目，有用到一个模板渲染的库，每次都要跑到终端去执行命令，生成渲染好的js文件，麻烦
 链接 | [https://packagecontrol.io/packages/Tpl](https://packagecontrol.io/packages/Tpl)
 
 项目名称 | FFSideMenu
-项目地址 | [https://github.com/fewspider/FFSideMenu](https://github.com/fewspider/FFSideMenu)
+项目地址 | [https://github.com/ohcrider/FFSideMenu](https://github.com/ohcrider/FFSideMenu)
 用途 | 可以比较方便地定义左右侧边栏，demo见项目地址
 折腾的原因 | 没有找到类似的库，感觉自己写的比较容易修改，开发
 链接 | [https://cocoapods.org/pods/FFSideMenu](https://cocoapods.org/pods/FFSideMenu)
 
 项目名称 | FFNavigationBar
-项目地址 | [https://github.com/fewspider/FFNavigationBar](https://github.com/fewspider/FFNavigationBar)
+项目地址 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 用途 | 可以比较方便地定义多个View，并且快速切换，demo见项目地址
 折腾的原因 | 没有找到类似的库，感觉自己写的比较容易修改，开发
-链接 | [https://github.com/fewspider/FFNavigationBar](https://github.com/fewspider/FFNavigationBar)
+链接 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 
 项目名称 | SwiftChromeActivity
-项目地址 | [https://github.com/fewspider/FFNavigationBar](https://github.com/fewspider/FFNavigationBar)
+项目地址 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 用途 | 打开链接，可以以Chrome打开，demo见项目地址
 折腾的原因 | 想研究下CocoaPods的库怎么开发
 链接 | [https://cocoapods.org/pods/SwiftChromeActivity](https://cocoapods.org/pods/SwiftChromeActivity)
