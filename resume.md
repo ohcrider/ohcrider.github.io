@@ -222,5 +222,5 @@ iOS开发 | Swift方面，Objective-C不熟
 ### 目前业余时间在弄App
 
 项目名称 | Twicrow
-项目地址 | [https://fewspider.github.io/twicrow/](https://fewspider.github.io/twicrow/)
+项目地址 | [https://ohcrider.github.io/twicrow/](https://ohcrider.github.io/twicrow/)
 项目介绍 | Twitter第三方客服端
