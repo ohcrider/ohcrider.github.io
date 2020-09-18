@@ -63,49 +63,37 @@ permalink: /resume/
 
 时间 | 2014.7-2014.9
 项目名称 | 电信 翼支付 支付接口对接
-开发工具 | eclipse
-系统 | windows
-框架 | struts+spring+hibernate
+框架 | struts+spring+hibernate（系统windows、开发工具eclipse）
 项目描述 | 校验话费支付，是不是成功
 责任描述 | 主要就Java webservice，返回的格式是xml，需要再把它格式化下，写个内部的方法供其他开发人员调用
 
 时间 | 2014.7-2014.9
 项目名称 | CMS 碎片管理系统
-开发工具 | eclipse
-系统 | windows
-框架 | struts+spring+hibernate
+框架 | struts+spring+hibernate （系统windows、开发工具eclipse）
 项目描述 | 类似门户网站首页，需要显示哪些模块，每个模块显示哪些文章
 责任描述 | 前端和后端
 
 时间 | 2014.7-2014.9
 项目名称 | 站点流量统计分析
-开发工具 | eclipse
-系统 | windows
-框架 | struts+spring+hibernate、bootstrap
+框架 | struts+spring+hibernate、bootstrap （系统windows、开发工具eclipse）
 项目描述 | 统计各个页面的访问人数，还有浏览器类型，地区
 责任描述 | 主要接口开发，还有统计结果的图表展示
 
 时间 | 2014.7-2014.9
 项目名称 | 微信微网站旅游项目
-开发工具 | eclipse
-系统 | windows
-框架 | struts+spring+hibernate、bootstrap
+框架 | struts+spring+hibernate、bootstrap （系统windows、开发工具eclipse）
 项目描述 | 一个打算搞旅游项目的公司委托开发的，推广是在微信，类似企业的手机端网站
 责任描述 | 原生js写的比较多，主要负责前端还有后端开发
 
 时间 | 2014.7-2014.9
 项目名称 | 114 商圈信息同步
-开发工具 | eclipse
-系统 | windows
-框架 | struts+spring+hibernate
+框架 | struts+spring+hibernate （系统windows、开发工具eclipse）
 项目描述 | 就是http api的开发，来进行消息同步
 责任描述 | 主要后端，只管前端调用接口，数据有增删改就可以了
 
 时间 | 2014.7-2014.9
 项目名称 | 爬虫
-开发工具 | vim
-系统 | Fedora
-框架 | Pyquery
+框架 | Pyquery （系统Fedora、开发工具vim）
 项目描述 | 抓取武夷山教育门户网站信息，大概就是比较典型的门户网站，爬取每个栏目底下的列表还有详情，委托方打算做手机端的网站，只是推送些最近更新的新文章
 责任描述 | 项目比较小，自己一个人负责，第一次用Python写东西，使用的是Python pyquery，跟Jquery的语法差不多，用起来也很快就上手了
 
@@ -113,49 +101,37 @@ permalink: /resume/
 
 时间 | 2014.9-2016.7
 项目名称 | Erp App
-开发工具 | Xcode
-系统 | OS X
-框架 | Swift
+框架 | Swift （系统MacOS、开发工具Xcode）
 项目描述 | 针对企业ERP，做些配套的App
 责任描述 | iOS开发
 
 时间 | 2014.9-2016.7
 项目名称 | 小卖家ERP系统
-开发工具 | Sublime Text 3
-系统 | OS X
-框架 | AngularJS、foundation
+框架 | AngularJS、foundation （系统MacOS、开发工具Sublime Text 3）
 项目描述 | 针对小卖家，精简的一套ERP系统
 责任描述 | 纯前端项目，AngularJS＋ES6
 
 时间 | 2014.9-2016.7
 项目名称 | 第三方物流接口整合
-开发工具 | Sublime Text 3
-系统 | Fedora
-框架 | Flask
+框架 | Flask （系统Fedora、开发工具Sublime Text 3）
 项目描述 | e邮宝、燕文物流、速卖通接口整合
 责任描述 | 负责对接第三方物流接口，封装接口
 
 时间 | 2014.9-2016.7
 项目名称 | 物流信息查询系统
-开发工具 | Sublime Text 3
-系统 | Fedora
-框架 | Flask、BeautifulSoup
+框架 | Flask、BeautifulSoup （系统Fedora、开发工具Sublime Text 3）
 项目描述 | 物流信息查询系统开发，国内20家左右物流，国外60家左右物流，模拟表单提交，再爬取对应的查询结果
 责任描述 | 主要是写爬虫，还有一些简单的验证码的识别，时间格式，正则表达式写得比较多，因为各个国家的语言不同，有些小语种的国家，月份日期千奇百怪
 
 时间 | 2014.9-2016.7
 项目名称 | 企业ERP系统
-开发工具 | Sublime Text 3
-系统 | Fedora
-框架 | Flask、SeaJs、VueJs
+框架 | Flask、SeaJs、VueJs （系统Fedora、开发工具Sublime Text 3）
 项目描述 | 企业ERP系统开发
 责任描述 | 主要负责前端
 
 时间 | 2014.9-2016.7
 项目名称 | 帽花App
-开发工具 | Xcode
-系统 | OS X
-框架 | Swift
+框架 | Swift （系统MacOS、开发工具Xcode）
 项目描述 | 针对一个婚纱品牌开发手机端的App，简单的分类和购买车
 责任描述 | iOS开发
 
@@ -163,9 +139,7 @@ permalink: /resume/
 
 时间 | 2016.7-2020.7
 项目名称 | Facebook页游相关
-开发工具 | Atom
-系统 | OS X
-框架 | ES6、VueJS、Webpack、React、Redux
+框架 | ES6、VueJS、Webpack、React、Redux （系统Fedora、开发工具Atom）
 项目描述 | 主要负责页游的主站，和一些内部系统的维护
 责任描述 | 前端架构
 
