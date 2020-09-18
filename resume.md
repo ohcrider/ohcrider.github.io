@@ -146,33 +146,28 @@ permalink: /resume/
 ##### 自己的项目介绍
 
 项目名称 | Tpl
-项目地址 | [https://github.com/ohcrider/Tpl](https://github.com/ohcrider/Tpl)
-用途 | 方便自己的开发
-折腾的原因 | 之前负责的一个项目，有用到一个模板渲染的库，每次都要跑到终端去执行命令，生成渲染好的js文件，麻烦
+项目地址 | [https://github.com/ohcrider/Tpl](https://github.com/ohcrider/Tpl) 
+折腾的原因 | 方便自己的开发，之前负责的一个项目，有用到一个模板渲染的库，每次都要跑到终端去执行命令，生成渲染好的js文件，麻烦
 链接 | [https://packagecontrol.io/packages/Tpl](https://packagecontrol.io/packages/Tpl)
 
 项目名称 | FFSideMenu
 项目地址 | [https://github.com/ohcrider/FFSideMenu](https://github.com/ohcrider/FFSideMenu)
-用途 | 可以比较方便地定义左右侧边栏，demo见项目地址
-折腾的原因 | 没有找到类似的库，感觉自己写的比较容易修改，开发
+折腾的原因 | 可以比较方便地定义左右侧边栏，没有找到类似的库，感觉自己写的比较容易修改，开发
 链接 | [https://cocoapods.org/pods/FFSideMenu](https://cocoapods.org/pods/FFSideMenu)
 
 项目名称 | FFNavigationBar
 项目地址 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
-用途 | 可以比较方便地定义多个View，并且快速切换，demo见项目地址
-折腾的原因 | 没有找到类似的库，感觉自己写的比较容易修改，开发
+折腾的原因 | 可以比较方便地定义多个View，并且快速切换，没有找到类似的库，感觉自己写的比较容易修改，开发
 链接 | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 
 项目名称 | SwiftChromeActivity
 项目地址 | [https://github.com/ohcrider/SwiftChromeActivity](https://github.com/ohcrider/SwiftChromeActivity)
-用途 | 打开链接，可以以Chrome打开，demo见项目地址
-折腾的原因 | 想研究下CocoaPods的库怎么开发
+折腾的原因 | 打开链接，可以以Chrome打开，想研究下CocoaPods的库怎么开发
 链接 | [https://cocoapods.org/pods/SwiftChromeActivity](https://cocoapods.org/pods/SwiftChromeActivity)
 
 项目名称 | JsSafeJson
 项目地址 | [https://github.com/ohcrider/JsSafeJson](https://github.com/ohcrider/JsSafeJson)
-用途 | 处理api接口返回数据格式化 避免一些错误类型
-折腾的原因 | 后端数据出错，会得到默认类型的默认值，保证程序健壮
+折腾的原因 |  处理api接口返回数据格式化 避免一些错误类型，后端数据出错，会得到默认类型的默认值，保证程序健壮
 链接 | [https://www.npmjs.com/package/js-safe-json](https://www.npmjs.com/package/js-safe-json)
 
 ##### 其他开源项目代码贡献
