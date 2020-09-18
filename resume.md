@@ -13,9 +13,6 @@ permalink: /resume/
 英语水平 | 四级
 工作年限 | 6年
 个人主页 | [https://dandelionslife.me](https://dandelionslife.me)
-
-### 联系方式
-
 电话 | [15260060705](tel:15260060705)
 微信 | fewspider
 邮箱 | [fewspider@gmail.com](mailto:fewspider@gmail.com)
