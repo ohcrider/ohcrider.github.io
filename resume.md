@@ -148,7 +148,7 @@ permalink: /resume/
 
 时间 | 2016.7-2020.7
 项目名称 | Facebook页游相关
-框架 | ES6、VueJS、Webpack、React、Redux （系统Fedora、开发工具Atom）
+框架 | ES6、VueJS、Webpack、React、Redux （系统MacOS、开发工具Atom）
 项目描述 | 主要负责页游的主站，和一些内部系统的维护
 责任描述 | 前端架构
 
@@ -157,7 +157,7 @@ permalink: /resume/
 
 时间 | 2020.10-2020.12
 项目名称 | 傲博教育管理系统
-框架 | ES6、VueJS、Webpack、React、Redux （系统Fedora、开发工具Atom）
+框架 | ES6、VueJS、Webpack、React、Redux （系统MacOS、开发工具Atom）
 项目描述 | 主要负责学校内部系统的维护与开发
 责任描述 | PC端管理系统以及对应App H5内嵌页面
 
