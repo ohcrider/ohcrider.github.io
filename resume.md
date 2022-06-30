@@ -10,7 +10,7 @@ permalink: /resume/
 性别 | 男
 出生日期 | 1993-10-3
 学历 | 2012.9-2015.7毕业 福州闽江学院 web程序应用专业 （英语水平四级）
-工作年限 | 7年
+工作年限 | 8年
 个人主页 | [https://fewspider.net](https://fewspider.net)
 联系方式 | 电话 [15260060705](tel:15260060705)  微信 fewspider  邮箱 [fewspider@gmail.com](mailto:fewspider@gmail.com)
 
