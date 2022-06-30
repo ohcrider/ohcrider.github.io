@@ -180,6 +180,12 @@ permalink: /resume/
 项目描述 | 主要负责迪斯尼项目前端架构
 责任描述 | 迪斯尼内部订餐系统，分三个端：游客段、平板（餐厅工作人员）端、admin（餐厅管理人员）端
 
+时间 | 2021.4-至今
+项目名称 | 联想区域云
+框架 | ES6、VueJS、Webpack、Vue （系统MacOS、开发工具Atom）
+项目描述 | 主要负责联想区域云项目前端架构
+责任描述 | 联想区域云项目，分多个PC端，学校相关的内部系统及门户
+
 ### 开源方面
 
 ##### github地址 [https://github.com/ohcrider](https://github.com/ohcrider)
