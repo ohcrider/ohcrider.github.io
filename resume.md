@@ -211,6 +211,18 @@ permalink: /resume/
 项目描述 | 主要负责联想区域云项目前端架构
 责任描述 | 联想区域云项目，分多个PC端，学校相关的内部系统及门户
 
+时间 | 2021.4-至今
+项目名称 | 田字格打卡助手
+框架 | ES6、VueJS、Webpack （系统MacOS、开发工具Atom）
+项目描述 | 主要负责学校教师上课打卡小程序跟管理后台开发
+责任描述 | 与联想区域云项目类似，算是联想合作的子公司，分多个PC端，学校相关的内部系统及门户
+
+时间 | 2021.4-至今
+项目名称 | 敏感词系统
+框架 | ES6、VueJS、Webpack （系统MacOS、开发工具Atom）
+项目描述 | 主要负责公司内部招聘发布招聘信息，避免一些敏感词
+责任描述 | 主要用的百度智能识别文字的接口，结合公司内部自有的系统，二次开发
+
 ### 开源方面
 
 ##### github地址 [https://github.com/ohcrider](https://github.com/ohcrider)
@@ -263,9 +275,3 @@ permalink: /resume/
 项目地址 | [https://github.com/riccardoscalco/textures](https://github.com/riccardoscalco/textures)
 项目介绍 | 一个创建SVG图案的JavaScript库
 个人贡献 | 修复 require 失败
-
-### 目前业余时间在弄App
-
-项目名称 | Twicrow
-项目地址 | [https://ohcrider.github.io/twicrow/](https://ohcrider.github.io/twicrow/)
-项目介绍 | Twitter第三方客服端
