@@ -211,6 +211,24 @@ permalink: /resume/
 项目描述 | 主要负责联想区域云项目前端架构
 责任描述 | 联想区域云项目，分多个PC端，学校相关的内部系统及门户
 
+时间 | 2021.4-至今
+项目名称 | 海亮集团组织架构同步飞书小程序
+框架 | ES6、VueJS、Webpack （系统MacOS、开发工具Atom）
+项目描述 | 主要负责海亮集团组织架构同步飞书小程序
+责任描述 | 飞书私有化项目 甲方原有组织架构 需要有个小程序查看同步情况 手动触发同步
+
+时间 | 2021.4-至今
+项目名称 | 工商银行飞书登录集成
+框架 | ES6、VueJS、Webpack （系统MacOS、开发工具Atom）
+项目描述 | 主要负责工商集团飞书登录
+责任描述 | 飞书私有化项目 甲方原有组织架构 非标准Oauth2协议 需要弄个中间件 接入飞书标准化的Oauth2协议
+
+时间 | 2021.4-至今
+项目名称 | 招聘平台AI扩展
+框架 | ES6、NodeJS、Webpack （系统MacOS、开发工具Atom）
+项目描述 | 主要负责自研内部招聘系统AI功能扩展
+责任描述 | 接入ChatGpt 扩展一些原有的业务 例如对话聊天中关键词的释意识别
+
 ### 开源方面
 
 ##### github地址 [https://github.com/ohcrider](https://github.com/ohcrider)
@@ -263,9 +281,3 @@ permalink: /resume/
 项目地址 | [https://github.com/riccardoscalco/textures](https://github.com/riccardoscalco/textures)
 项目介绍 | 一个创建SVG图案的JavaScript库
 个人贡献 | 修复 require 失败
-
-### 目前业余时间在弄App
-
-项目名称 | Twicrow
-项目地址 | [https://ohcrider.github.io/twicrow/](https://ohcrider.github.io/twicrow/)
-项目介绍 | Twitter第三方客服端
