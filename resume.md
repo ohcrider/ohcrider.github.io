@@ -10,7 +10,7 @@ permalink: /resume/
 性别 | 男
 出生日期 | 1993-10-3
 学历 | 2012.9-2015.7毕业 福州闽江学院 web程序应用专业 （英语水平四级）
-工作年限 | 8年
+工作年限 | 9年
 个人主页 | [https://fewspider.net](https://fewspider.net)
 联系方式 | 电话 [15260060705](tel:15260060705)  微信 fewspider  邮箱 [fewspider@gmail.com](mailto:fewspider@gmail.com)
 
@@ -18,13 +18,13 @@ permalink: /resume/
 
 职位 | 技术栈 
 ----|------
-前端开发 | 纯前端项目，React+Redux 
+前端开发 | 纯前端项目，React+Redux
 
 ### 自我总结
 
 个人特点 | 自学能力比较强，一般新的框架或者编程语言，只要知道变量如何传递，就比较快上手
 编程感想 | 组件化跟中间件的概念在复杂的WEB应用中越来越成为主流，能够把复杂的功能拆分成简单的几个部分，再结合面向对象，总结出它们的共同点，写一个通用的组件，让组件跟组件之间只有数据的耦合，增加复用，减少代码量，减少代码错误的可能性跟维护的复杂度
-技术栈 | 前端主要React+Redux+Webpack，后端主要Flask，部署线上主要Docker，iOS会用Swift
+技术栈 | 前端主要React+Redux+Webpack，后端主要Flask，部署线上主要Docker
 
 ### 工作经历
 
