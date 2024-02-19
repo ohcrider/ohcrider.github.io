@@ -24,7 +24,7 @@ Front-end development | Pure front-end project, React+Redux
 
 Personal Characteristics | Strong self-learning ability. Generally speaking, if you know how to pass variables to a new framework or programming language, you can get started quickly.
 Programming Thoughts | The concepts of componentization and middleware are becoming more and more mainstream in complex WEB applications. Complex functions can be split into several simple parts, combined with object-oriented, to summarize their commonalities and write a general Components, allowing only data coupling between components, increasing reuse, reducing the amount of code, reducing the possibility of code errors and the complexity of maintenance
-Technology stack | The front-end is mainly React+Redux+Webpack, the back-end is mainly Flask, the deployment line is mainly Docker, and iOS will use Swift to write some simple Apps
+Technology Stack | The front-end is mainly React+Redux+Webpack, the back-end is mainly Flask, the deployment line is mainly Docker, and iOS will use Swift to write some simple Apps
 Industry Thoughts | In fact, in many cases, the software industry still has management complexity, and technology is sometimes secondary. Tasks can be split to reduce complexity. In addition, document maintenance is also an area that many people ignore. Reasonable arrangements can get twice the result with half the effort.
 Hobbies | When I have free time at home, I will live broadcast mobile games. When I want to go out to play, I will bring my camera and FPV drone
 
@@ -97,13 +97,13 @@ Responsibility Description | Main interface development, and chart display of st
 Time | 2014.7-2014.9
 Project Name | WeChat Microsite Tourism Project
 Framework | struts+spring+hibernate, bootstrap (system windows, development tool eclipse)
-Project description | Commissioned by a company planning to engage in tourism projects, the promotion is on WeChat, which is similar to a company’s mobile website
+Project Description | Commissioned by a company planning to engage in tourism projects, the promotion is on WeChat, which is similar to a company’s mobile website
 Responsibility Description | I write a lot of native js, mainly responsible for front-end and back-end development
 
 Time | 2014.7-2014.9
 Project Name | 114 Business district information synchronization
 Framework | struts+spring+hibernate (system windows, development tool eclipse)
-Project description | It is the development of http api for message synchronization
+Project Description | It is the development of http api for message synchronization
 Responsibility Description | The main backend, only the frontend calls the interface and data is added, deleted or modified.
 
 Time | 2014.7-2014.9
@@ -129,7 +129,7 @@ Responsibility Description | Pure front-end project, AngularJS+ES6
 Time | 2014.9-2016.7
 Project Name | Third-party logistics interface integration
 Framework | Flask (system Fedora, development tool Sublime Text 3)
-Project description | Integration of interfaces of ePoubao, Yanwen Logistics and AliExpress
+Project Description | Integration of interfaces of ePoubao, Yanwen Logistics and AliExpress
 Responsibility Description | Responsible for docking third-party logistics interfaces and encapsulating interfaces
 
 Time | 2014.9-2016.7
