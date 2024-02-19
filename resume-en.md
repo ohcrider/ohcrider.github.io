@@ -26,7 +26,7 @@ Personal Characteristics | Strong self-learning ability. Generally speaking, if 
 Programming Thoughts | The concepts of componentization and middleware are becoming more and more mainstream in complex WEB applications. Complex functions can be split into several simple parts, combined with object-oriented, to summarize their commonalities and write a general Components, allowing only data coupling between components, increasing reuse, reducing the amount of code, reducing the possibility of code errors and the complexity of maintenance
 Technology stack | The front-end is mainly React+Redux+Webpack, the back-end is mainly Flask, the deployment line is mainly Docker, and iOS will use Swift to write some simple Apps
 Industry Thoughts | In fact, in many cases, the software industry still has management complexity, and technology is sometimes secondary. Tasks can be split to reduce complexity. In addition, document maintenance is also an area that many people ignore. Reasonable arrangements can get twice the result with half the effort.
-Hobbies | When I have free time at home, I will live broadcast mobile games. When I want to go out to play, I will bring my camera and self-assembled FPV drone (travel machine)
+Hobbies | When I have free time at home, I will live broadcast mobile games. When I want to go out to play, I will bring my camera and FPV drone
 
 ### work experience
 
@@ -45,7 +45,7 @@ Job content | Python development, front-end (e-commerce internal system and craw
 ##### The third work experience
 
 Time | 2016.7-2020.7
-Company Name | Xiamen Huayou Technology Co., Ltd. (front-end architect)
+Company Name | Xiamen Huayou Technology Co., Ltd. (front-end leader)
 Job content | Front-end (overseas web game business)
 
 
@@ -64,7 +64,7 @@ Job content | Front-end leader of the Disney project team, responsible for the f
 ### Management experience
 
 Time | 2016.7-2020.7
-Company Name | Xiamen Huayou Technology Co., Ltd. (front-end architect)
+Company Name | Xiamen Huayou Technology Co., Ltd. (front-end leader)
 Work Content | Leading several new people from scratch to being able to complete projects independently
 
 Time | 2021.4-present
