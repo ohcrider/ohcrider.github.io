@@ -34,19 +34,19 @@ Hobbies | When I have free time at home, I will live broadcast mobile games. Whe
 
 Time | 2014.7-2014.9 (Internship)
 Company | Fuzhou Zhizhong Software Technology Company (Java Software Engineer)
-Job content | Java EE development, front-end (Telecom and China Unicom business)
+Work content | Java EE development, front-end (Telecom and China Unicom business)
 
 ##### Second work experience
 
 Time | 2014.9-2016.7
 Company | Fuzhou Quanyitong Information Technology Co., Ltd. (Python Software Engineer)
-Job content | Python development, front-end (e-commerce internal system and crawler business)
+Work content | Python development, front-end (e-commerce internal system and crawler business)
 
 ##### The third work experience
 
 Time | 2016.7-2020.7
 Company | Xiamen Huayou Technology Co., Ltd. (front-end leader)
-Job content | Front-end (overseas web game business)
+Work content | Front-end (overseas web game business)
 
 
 ##### The fourth work experience
@@ -59,7 +59,7 @@ Work content | Development and maintenance of the school's internal OA system
 
 Time | 2021.4-present
 Company | iSoftStone Co., Ltd. (front-end)
-Job content | Front-end leader of the Disney project team, responsible for the front-end development architecture and leading the front-end team
+Work content | Front-end leader of the Disney project team, responsible for the front-end development architecture and leading the front-end team
 
 ### Management experience
 
