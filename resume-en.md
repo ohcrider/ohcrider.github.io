@@ -233,10 +233,6 @@ Description of Responsibilities | Feishu Privatization Project Party A’s origi
 
 Time | 2021.4-present
 Project name | ICBC Feishu login integration
-Framework | ES6, VueJS, Web
-
-Time | 2021.4-present
-Project name | ICBC Feishu login integration
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for Feishu login of Industrial and Commercial Group
 Description of Responsibilities | Feishu Privatization Project Party A’s original organizational structure Non-standard Oauth2 protocol Needs a middleware to connect to Feishu’s standardized Oauth2 protocol
