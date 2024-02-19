@@ -279,19 +279,19 @@ Link | [https://www.npmjs.com/package/js-safe-json](https://www.npmjs.com/packag
 Project Name | OAuthSwift
 Project Address | [https://github.com/OAuthSwift/OAuthSwift](https://github.com/OAuthSwift/OAuthSwift)
 Project Introduction | Oauth library written in Swift
-Personal contribution | 1. The whitespace characters in Oauth 1.0a are not encoded, which was discovered while tossing the twitter api <br/> 2. The Swift NSURLConnection method was abandoned in iOS 9.0 and rewritten into the recommended NSURLSession
+Personal Contribution | 1. The whitespace characters in Oauth 1.0a are not encoded, which was discovered while tossing the twitter api <br/> 2. The Swift NSURLConnection method was abandoned in iOS 9.0 and rewritten into the recommended NSURLSession
 
 Project Name | tweet
 Project Address | [https://github.com/ttezel/twit](https://github.com/ttezel/twit)
 Project Introduction | Twitter API Client (REST & Streaming API) written by Node
-Personal contribution | Several new methods of Streaming
+Personal Contribution | Several new methods of Streaming
 
 Project Name | Alamofire
 Project Address | [https://github.com/Alamofire/Alamofire](https://github.com/Alamofire/Alamofire)
 Project Introduction | Swift's famous network request library
-Personal contribution | Fix incorrect symbols in the sample code of README.md
+Personal Contribution | Fix incorrect symbols in the sample code of README.md
 
 Project Name | textures
 Project Address | [https://github.com/riccardoscalco/textures](https://github.com/riccardoscalco/textures)
 Project Introduction | A JavaScript library for creating SVG patterns
-Personal contribution | Fix require failure
+Personal Contribution | Fix require failure
