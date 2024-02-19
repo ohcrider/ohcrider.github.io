@@ -77,7 +77,7 @@ Work Content | Lead several new people, quickly integrate into new projects, and
 ##### The first company
 
 Time | 2014.7-2014.9
-Project name | Telecom Yipay payment interface docking
+Project Name | Telecom Yipay payment interface docking
 Framework | struts+spring+hibernate (system windows, development tool eclipse)
 Project Description | Verify phone bill payment is successful
 Responsibility Description | Mainly Java webservice, the returned format is xml, you need to format it again and write an internal method for other developers to call
@@ -89,7 +89,7 @@ Project Description | Similar to the homepage of a portal, which modules need to
 Responsibility Description | Front End and Back End
 
 Time | 2014.7-2014.9
-Project name | Site traffic statistical analysis
+Project Name | Site traffic statistical analysis
 Framework | struts+spring+hibernate, bootstrap (system windows, development tool eclipse)
 Project Description | Count the number of visitors to each page, and browser type and region
 Responsibility Description | Main interface development, and chart display of statistical results
@@ -101,13 +101,13 @@ Project description | Commissioned by a company planning to engage in tourism pr
 Responsibility Description | I write a lot of native js, mainly responsible for front-end and back-end development
 
 Time | 2014.7-2014.9
-Project name | 114 Business district information synchronization
+Project Name | 114 Business district information synchronization
 Framework | struts+spring+hibernate (system windows, development tool eclipse)
 Project description | It is the development of http api for message synchronization
 Responsibility Description | The main backend, only the frontend calls the interface and data is added, deleted or modified.
 
 Time | 2014.7-2014.9
-Project name | crawler
+Project Name | crawler
 Framework | Pyquery (system Fedora, development tool vim)
 Project Description | Crawl the information of Wuyishan Education Portal, which is probably a more typical portal website. Crawl the list and details under each column. The client plans to make a mobile website and just push some recently updated new articles.
 Responsibility Description | The project is relatively small, and I am responsible for it alone. It is my first time to write something in Python. I use Python pyquery, which has similar syntax to Jquery. I can quickly get started with it.
@@ -127,13 +127,13 @@ Project Description | A streamlined ERP system for small sellers
 Responsibility Description | Pure front-end project, AngularJS+ES6
 
 Time | 2014.9-2016.7
-Project name | Third-party logistics interface integration
+Project Name | Third-party logistics interface integration
 Framework | Flask (system Fedora, development tool Sublime Text 3)
 Project description | Integration of interfaces of ePoubao, Yanwen Logistics and AliExpress
 Responsibility Description | Responsible for docking third-party logistics interfaces and encapsulating interfaces
 
 Time | 2014.9-2016.7
-Project name | Logistics information query system
+Project Name | Logistics information query system
 Framework | Flask, BeautifulSoup (system Fedora, development tool Sublime Text 3)
 Project Description | Development of logistics information query system, about 20 domestic logistics companies, and about 60 foreign logistics companies, simulated form submission, and then crawled the corresponding query results
 Responsibility Description | Mainly writing crawlers, and some simple verification code recognition, time formats, and regular expressions. Because the languages ​​​​of each country are different, in some countries with small languages, the months and dates are all kinds of strange.
@@ -145,7 +145,7 @@ Project Description | Enterprise ERP System Development
 Responsibility Description | Mainly responsible for front-end
 
 Time | 2014.9-2016.7
-Project name | Maohua App
+Project Name | Maohua App
 Framework | Swift (system MacOS, development tool Xcode)
 Project Description | Develop a mobile app for a wedding dress brand, simple classification and car purchase
 Responsibility Description | iOS Development
@@ -153,7 +153,7 @@ Responsibility Description | iOS Development
 ##### The third company
 
 Time | 2016.7-2020.7
-Project name | Facebook page game related
+Project Name | Facebook page game related
 Framework | ES6, VueJS, Webpack, React, Redux (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the main website of the web game and the maintenance of some internal systems
 Responsibility Description | Front-end Architecture
@@ -190,19 +190,19 @@ Project Description | Mainly responsible for the front-end architecture of Feish
 Responsibility Description | Feishu internal promotion project, mainly for display of promotional pages
 
 Time | 2021.4-present
-Project name | Feishu chat record audit system
+Project Name | Feishu chat record audit system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Feishu chat record audit system project
 Responsibility Description | The Feishu chat record audit system project is mainly used as a customized service within the enterprise to review the chat record keywords of internal employees.
 
 Time | 2021.4-present
-Project name | Siemens time sheet system
+Project Name | Siemens time sheet system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Siemens time sheet system project
 Responsibility Description | Siemens time sheet system, OA system used by internal employees
 
 Time | 2021.4-present
-Project name | Siemens sia system
+Project Name | Siemens sia system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Siemens sia system project
 Responsibility Description | Siemens sia system, transformation using PC as mobile terminal
@@ -214,13 +214,13 @@ Project Description | Mainly responsible for the front-end architecture of Lenov
 Responsibility Description | Lenovo regional cloud project, divided into multiple PC terminals, school-related internal systems and portals
 
 Time | 2021.4-present
-Project name | Tianzige punch-in assistant
+Project Name | Tianzige punch-in assistant
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the development of school teachers’ check-in applet and management backend
 Responsibility Description | Similar to Lenovo's regional cloud project, it is a subsidiary of Lenovo's cooperation, divided into multiple PC terminals and applets, school-related internal systems and portals
 
 Time | 2021.4-present
-Project name | Sensitive word system
+Project Name | Sensitive word system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the company's internal recruitment and release of recruitment information, avoiding some sensitive words
 Responsibility Description | Mainly use Baidu’s intelligent text recognition interface, combined with the company’s own internal system, for secondary development
@@ -232,7 +232,7 @@ Project Description | Mainly responsible for synchronizing the organizational st
 Responsibility Description | Feishu Privatization Project Party A’s original organizational structure requires a small program to view synchronization status and trigger synchronization manually
 
 Time | 2021.4-present
-Project name | ICBC Feishu login integration
+Project Name | ICBC Feishu login integration
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for Feishu login of Industrial and Commercial Group
 Responsibility Description | Feishu Privatization Project Party A’s original organizational structure Non-standard Oauth2 protocol Needs a middleware to connect to Feishu’s standardized Oauth2 protocol
@@ -254,34 +254,34 @@ Project address | [https://github.com/ohcrider/Tpl](https://github.com/ohcrider/
 The reason for the trouble | To facilitate my own development, a project I was responsible for before used a template rendering library. Every time I had to run to the terminal to execute the command and generate the rendered js file, which was troublesome.
 Link | [https://packagecontrol.io/packages/Tpl](https://packagecontrol.io/packages/Tpl)
 
-Project name | FFSideMenu
+Project Name | FFSideMenu
 Project address | [https://github.com/ohcrider/FFSideMenu](https://github.com/ohcrider/FFSideMenu)
 The reason for the trouble | It is easier to define the left and right sidebars. I have not found a similar library. I feel that the one I wrote is easier to modify and develop.
 Link | [https://cocoapods.org/pods/FFSideMenu](https://cocoapods.org/pods/FFSideMenu)
 
-Project name | FFNavigationBar
+Project Name | FFNavigationBar
 Project address | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 The reason for the trouble | You can define multiple Views more easily and switch quickly. I haven't found a similar library. I feel that the one I wrote is easier to modify and develop.
 Link | [https://github.com/ohcrider/FFNavigationBar](https://github.com/ohcrider/FFNavigationBar)
 
-Project name | SwiftChromeActivity
+Project Name | SwiftChromeActivity
 Project address | [https://github.com/ohcrider/SwiftChromeActivity](https://github.com/ohcrider/SwiftChromeActivity)
 The reason for the trouble | Open the link, you can open it in Chrome, I want to study how to develop the CocoaPods library
 Link | [https://cocoapods.org/pods/SwiftChromeActivity](https://cocoapods.org/pods/SwiftChromeActivity)
 
-Project name | JsSafeJson
+Project Name | JsSafeJson
 Project address | [https://github.com/ohcrider/JsSafeJson](https://github.com/ohcrider/JsSafeJson)
 The reason for the trouble | Formatting the data returned by the api interface to avoid some error types. If the back-end data is wrong, the default value of the default type will be obtained to ensure the robustness of the program.
 Link | [https://www.npmjs.com/package/js-safe-json](https://www.npmjs.com/package/js-safe-json)
 
 ##### Code contributions to other open source projects
 
-Project name | OAuthSwift
+Project Name | OAuthSwift
 Project address | [https://github.com/OAuthSwift/OAuthSwift](https://github.com/OAuthSwift/OAuthSwift)
 Project Introduction | Oauth library written in Swift
 Personal contribution | 1. The whitespace characters in Oauth 1.0a are not encoded, which was discovered while tossing the twitter api <br/> 2. The Swift NSURLConnection method was abandoned in iOS 9.0 and rewritten into the recommended NSURLSession
 
-Project name | tweet
+Project Name | tweet
 Project address | [https://github.com/ttezel/twit](https://github.com/ttezel/twit)
 Project Introduction | Twitter API Client (REST & Streaming API) written by Node
 Personal contribution | Several new methods of Streaming
@@ -291,7 +291,7 @@ Project address | [https://github.com/Alamofire/Alamofire](https://github.com/Al
 Project Introduction | Swift's famous network request library
 Personal contribution | Fix incorrect symbols in the sample code of README.md
 
-Project name | textures
+Project Name | textures
 Project address | [https://github.com/riccardoscalco/textures](https://github.com/riccardoscalco/textures)
 Project Introduction | A JavaScript library for creating SVG patterns
 Personal contribution | Fix require failure
