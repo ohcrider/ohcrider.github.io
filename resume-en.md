@@ -98,7 +98,7 @@ Time | 2014.7-2014.9
 Project Name | WeChat Microsite Tourism Project
 Framework | struts+spring+hibernate, bootstrap (system windows, development tool eclipse)
 Project description | Commissioned by a company planning to engage in tourism projects, the promotion is on WeChat, which is similar to a company’s mobile website
-Responsibility description | I write a lot of native js, mainly responsible for front-end and back-end development
+Responsibility Description | I write a lot of native js, mainly responsible for front-end and back-end development
 
 Time | 2014.7-2014.9
 Project name | 114 Business district information synchronization
@@ -165,7 +165,7 @@ Time | 2020.10-2020.12
 Project Name | Aobo Education Management System
 Framework | ES6, VueJS, Webpack, React, Redux (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the maintenance and development of the school's internal system
-Responsibility description | PC management system and corresponding App H5 embedded page
+Responsibility Description | PC management system and corresponding App H5 embedded page
 
 
 ##### The fifth company
