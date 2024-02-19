@@ -8,10 +8,10 @@ permalink: /resume-en/
 
 Name | Shen Yan (Abel David)
 Gender | Male
-Date of birth | 1993-10-3
-Educational qualifications | Graduated from 2012.9-2015.7, Fuzhou Minjiang College, majoring in web program application (English proficiency level 4)
-Working experience | 10 years
-Personal website | [https://fewspider.net](https://fewspider.net)
+Date of Birth | 1993-10-3
+Educational Qualifications | Graduated from 2012.9-2015.7, Fuzhou Minjiang College, majoring in web program application (English proficiency level 4)
+Working Experience | 10 years
+Personal Website | [https://fewspider.net](https://fewspider.net)
 Contact Information | Telephone [15260060705](tel:15260060705) WeChat fewspider Email [fewspider@gmail.com](mailto:fewspider@gmail.com)
 
 ### Career Objective
@@ -34,32 +34,32 @@ Hobbies | When I have free time at home, I will live broadcast mobile games. Whe
 
 Time | 2014.7-2014.9 (Internship)
 Company | Fuzhou Zhizhong Software Technology Company (Java Software Engineer)
-Work content | Java EE development, front-end (Telecom and China Unicom business)
+Work Content | Java EE development, front-end (Telecom and China Unicom business)
 
 ##### Second work experience
 
 Time | 2014.9-2016.7
 Company | Fuzhou Quanyitong Information Technology Co., Ltd. (Python Software Engineer)
-Work content | Python development, front-end (e-commerce internal system and crawler business)
+Work Content | Python development, front-end (e-commerce internal system and crawler business)
 
 ##### The third work experience
 
 Time | 2016.7-2020.7
 Company | Xiamen Huayou Technology Co., Ltd. (front-end leader)
-Work content | Front-end (overseas web game business)
+Work Content | Front-end (overseas web game business)
 
 
 ##### The fourth work experience
 
 Time | 2020.10-2020.12
 Company | Xiamen Aobo Education Co., Ltd. (front-end)
-Work content | Development and maintenance of the school's internal OA system
+Work Content | Development and maintenance of the school's internal OA system
 
 ##### The fifth period of work experience
 
 Time | 2021.4-present
 Company | iSoftStone Co., Ltd. (front-end)
-Work content | Front-end leader of the Disney project team, responsible for the front-end development architecture and leading the front-end team
+Work Content | Front-end leader of the Disney project team, responsible for the front-end development architecture and leading the front-end team
 
 ### Management experience
 
@@ -69,7 +69,7 @@ Work Content | Leading several new people from scratch to being able to complete
 
 Time | 2021.4-present
 Company | iSoftStone Co., Ltd. (front-end leader)
-Work content | Lead several new people, quickly integrate into new projects, and carry out secondary development and maintenance
+Work Content | Lead several new people, quickly integrate into new projects, and carry out secondary development and maintenance
 
 
 ### Project experience
