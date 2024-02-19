@@ -33,42 +33,42 @@ Hobbies | When I have free time at home, I will live broadcast mobile games. Whe
 ##### First work experience
 
 Time | 2014.7-2014.9 (Internship)
-Company Name | Fuzhou Zhizhong Software Technology Company (Java Software Engineer)
+Company | Fuzhou Zhizhong Software Technology Company (Java Software Engineer)
 Job content | Java EE development, front-end (Telecom and China Unicom business)
 
 ##### Second work experience
 
 Time | 2014.9-2016.7
-Company Name | Fuzhou Quanyitong Information Technology Co., Ltd. (Python Software Engineer)
+Company | Fuzhou Quanyitong Information Technology Co., Ltd. (Python Software Engineer)
 Job content | Python development, front-end (e-commerce internal system and crawler business)
 
 ##### The third work experience
 
 Time | 2016.7-2020.7
-Company Name | Xiamen Huayou Technology Co., Ltd. (front-end leader)
+Company | Xiamen Huayou Technology Co., Ltd. (front-end leader)
 Job content | Front-end (overseas web game business)
 
 
 ##### The fourth work experience
 
 Time | 2020.10-2020.12
-Company Name | Xiamen Aobo Education Co., Ltd. (front-end)
+Company | Xiamen Aobo Education Co., Ltd. (front-end)
 Work content | Development and maintenance of the school's internal OA system
 
 ##### The fifth period of work experience
 
 Time | 2021.4-present
-Company Name | iSoftStone Co., Ltd. (front-end)
+Company | iSoftStone Co., Ltd. (front-end)
 Job content | Front-end leader of the Disney project team, responsible for the front-end development architecture and leading the front-end team
 
 ### Management experience
 
 Time | 2016.7-2020.7
-Company Name | Xiamen Huayou Technology Co., Ltd. (front-end leader)
+Company | Xiamen Huayou Technology Co., Ltd. (front-end leader)
 Work Content | Leading several new people from scratch to being able to complete projects independently
 
 Time | 2021.4-present
-Company Name | iSoftStone Co., Ltd. (front-end leader)
+Company | iSoftStone Co., Ltd. (front-end leader)
 Work content | Lead several new people, quickly integrate into new projects, and carry out secondary development and maintenance
 
 
