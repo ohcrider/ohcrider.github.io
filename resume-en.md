@@ -68,7 +68,7 @@ Company Name | Xiamen Huayou Technology Co., Ltd. (front-end leader)
 Work Content | Leading several new people from scratch to being able to complete projects independently
 
 Time | 2021.4-present
-Company Name | iSoftStone Co., Ltd. (front-end person in charge)
+Company Name | iSoftStone Co., Ltd. (front-end leader)
 Work content | Lead several new people, quickly integrate into new projects, and carry out secondary development and maintenance
 
 
