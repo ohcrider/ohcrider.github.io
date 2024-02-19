@@ -86,13 +86,13 @@ Time | 2014.7-2014.9
 Project Name | CMS Fragmentation Management System
 Framework | struts+spring+hibernate (system windows, development tool eclipse)
 Project Description | Similar to the homepage of a portal, which modules need to be displayed and which articles should be displayed in each module
-Description of Responsibilities | Front End and Back End
+Responsibility Description | Front End and Back End
 
 Time | 2014.7-2014.9
 Project name | Site traffic statistical analysis
 Framework | struts+spring+hibernate, bootstrap (system windows, development tool eclipse)
 Project Description | Count the number of visitors to each page, and browser type and region
-Description of Responsibilities | Main interface development, and chart display of statistical results
+Responsibility Description | Main interface development, and chart display of statistical results
 
 Time | 2014.7-2014.9
 Project Name | WeChat Microsite Tourism Project
@@ -110,7 +110,7 @@ Time | 2014.7-2014.9
 Project name | crawler
 Framework | Pyquery (system Fedora, development tool vim)
 Project Description | Crawl the information of Wuyishan Education Portal, which is probably a more typical portal website. Crawl the list and details under each column. The client plans to make a mobile website and just push some recently updated new articles.
-Description of Responsibilities | The project is relatively small, and I am responsible for it alone. It is my first time to write something in Python. I use Python pyquery, which has similar syntax to Jquery. I can quickly get started with it.
+Responsibility Description | The project is relatively small, and I am responsible for it alone. It is my first time to write something in Python. I use Python pyquery, which has similar syntax to Jquery. I can quickly get started with it.
 
 ##### The second company
 
@@ -118,13 +118,13 @@ Time | 2014.9-2016.7
 Project Name | Erp App
 Framework | Swift (system MacOS, development tool Xcode)
 Project Description | Make some supporting apps for enterprise ERP
-Description of Responsibilities | iOS Development
+Responsibility Description | iOS Development
 
 Time | 2014.9-2016.7
 Project Name | Small Seller ERP System
 Framework | AngularJS, foundation (system MacOS, development tool Sublime Text 3)
 Project Description | A streamlined ERP system for small sellers
-Description of Responsibilities | Pure front-end project, AngularJS+ES6
+Responsibility Description | Pure front-end project, AngularJS+ES6
 
 Time | 2014.9-2016.7
 Project name | Third-party logistics interface integration
@@ -148,7 +148,7 @@ Time | 2014.9-2016.7
 Project name | Maohua App
 Framework | Swift (system MacOS, development tool Xcode)
 Project Description | Develop a mobile app for a wedding dress brand, simple classification and car purchase
-Description of Responsibilities | iOS Development
+Responsibility Description | iOS Development
 
 ##### The third company
 
@@ -174,74 +174,74 @@ Time | 2021.4-present
 Project Name | Shangdi Shopping Mini Program
 Framework | ES6, VueJS, Webpack, React, Redux (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Disney project
-Description of responsibilities | Disney fifth anniversary souvenir buying app
+Responsibility Description | Disney fifth anniversary souvenir buying app
 
 Time | 2021.4-present
 Project Name | Disney Internal Ordering System
 Framework | ES6, VueJS, Webpack, React, Redux (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Disney project
-Description of Responsibilities | Disney’s internal ordering system is divided into three terminals: guest terminal, tablet terminal (restaurant staff), and admin (restaurant manager) terminal
+Responsibility Description | Disney’s internal ordering system is divided into three terminals: guest terminal, tablet terminal (restaurant staff), and admin (restaurant manager) terminal
 
 
 Time | 2021.4-present
 Project Name | Feishu Internal Recommendation Project
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of Feishu Internal Promotion Project
-Description of Responsibilities | Feishu internal promotion project, mainly for display of promotional pages
+Responsibility Description | Feishu internal promotion project, mainly for display of promotional pages
 
 Time | 2021.4-present
 Project name | Feishu chat record audit system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Feishu chat record audit system project
-Description of responsibilities | The Feishu chat record audit system project is mainly used as a customized service within the enterprise to review the chat record keywords of internal employees.
+Responsibility Description | The Feishu chat record audit system project is mainly used as a customized service within the enterprise to review the chat record keywords of internal employees.
 
 Time | 2021.4-present
 Project name | Siemens time sheet system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Siemens time sheet system project
-Description of responsibilities | Siemens time sheet system, OA system used by internal employees
+Responsibility Description | Siemens time sheet system, OA system used by internal employees
 
 Time | 2021.4-present
 Project name | Siemens sia system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of the Siemens sia system project
-Description of Responsibilities | Siemens sia system, transformation using PC as mobile terminal
+Responsibility Description | Siemens sia system, transformation using PC as mobile terminal
 
 Time | 2021.4-present
 Project Name | Lenovo Regional Cloud
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the front-end architecture of Lenovo regional cloud project
-Description of Responsibilities | Lenovo regional cloud project, divided into multiple PC terminals, school-related internal systems and portals
+Responsibility Description | Lenovo regional cloud project, divided into multiple PC terminals, school-related internal systems and portals
 
 Time | 2021.4-present
 Project name | Tianzige punch-in assistant
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the development of school teachers’ check-in applet and management backend
-Description of Responsibilities | Similar to Lenovo's regional cloud project, it is a subsidiary of Lenovo's cooperation, divided into multiple PC terminals and applets, school-related internal systems and portals
+Responsibility Description | Similar to Lenovo's regional cloud project, it is a subsidiary of Lenovo's cooperation, divided into multiple PC terminals and applets, school-related internal systems and portals
 
 Time | 2021.4-present
 Project name | Sensitive word system
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for the company's internal recruitment and release of recruitment information, avoiding some sensitive words
-Description of Responsibilities | Mainly use Baidu’s intelligent text recognition interface, combined with the company’s own internal system, for secondary development
+Responsibility Description | Mainly use Baidu’s intelligent text recognition interface, combined with the company’s own internal system, for secondary development
 
 Time | 2021.4-present
 Project Name | Hailiang Group Organizational Structure Synchronization Feishu Mini Program
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for synchronizing the organizational structure of Hailiang Group with Feishu Mini Program
-Description of Responsibilities | Feishu Privatization Project Party A’s original organizational structure requires a small program to view synchronization status and trigger synchronization manually
+Responsibility Description | Feishu Privatization Project Party A’s original organizational structure requires a small program to view synchronization status and trigger synchronization manually
 
 Time | 2021.4-present
 Project name | ICBC Feishu login integration
 Framework | ES6, VueJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for Feishu login of Industrial and Commercial Group
-Description of Responsibilities | Feishu Privatization Project Party A’s original organizational structure Non-standard Oauth2 protocol Needs a middleware to connect to Feishu’s standardized Oauth2 protocol
+Responsibility Description | Feishu Privatization Project Party A’s original organizational structure Non-standard Oauth2 protocol Needs a middleware to connect to Feishu’s standardized Oauth2 protocol
 
 Time | 2021.4-present
 Project Name | Recruitment Platform AI Extension
 Framework | ES6, NodeJS, Webpack (system MacOS, development tool Atom)
 Project Description | Mainly responsible for self-developed internal recruitment system AI function expansion
-Description of responsibilities | Connect to ChatGpt to expand some original services, such as meaning recognition of keywords in conversation chats
+Responsibility Description | Connect to ChatGpt to expand some original services, such as meaning recognition of keywords in conversation chats
 
 ### Open source aspects
 
