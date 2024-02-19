@@ -91,8 +91,8 @@ Description of Responsibilities | Front End and Back End
 Time | 2014.7-2014.9
 Project name | Site traffic statistical analysis
 Framework | struts+spring+hibernate, bootstrap (system windows, development tool eclipse)
-Project Description | Count the number of visitors to each page, as well as browser type and region
-Description of Responsibilities | Main interface development, as well as chart display of statistical results
+Project Description | Count the number of visitors to each page, and browser type and region
+Description of Responsibilities | Main interface development, and chart display of statistical results
 
 Time | 2014.7-2014.9
 Project Name | WeChat Microsite Tourism Project
@@ -136,7 +136,7 @@ Time | 2014.9-2016.7
 Project name | Logistics information query system
 Framework | Flask, BeautifulSoup (system Fedora, development tool Sublime Text 3)
 Project Description | Development of logistics information query system, about 20 domestic logistics companies, and about 60 foreign logistics companies, simulated form submission, and then crawled the corresponding query results
-Responsibility Description | Mainly writing crawlers, as well as some simple verification code recognition, time formats, and regular expressions. Because the languages ​​​​of each country are different, in some countries with small languages, the months and dates are all kinds of strange.
+Responsibility Description | Mainly writing crawlers, and some simple verification code recognition, time formats, and regular expressions. Because the languages ​​​​of each country are different, in some countries with small languages, the months and dates are all kinds of strange.
 
 Time | 2014.9-2016.7
 Project Name | Enterprise ERP System
